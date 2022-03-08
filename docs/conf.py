@@ -53,11 +53,10 @@ html_theme_options = {
     "repository_url": "https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2",
     "use_repository_button": True,
 }
-html_logo = "_build/html/images/cybergis-vis-image.png"
+html_logo = "cybergis-vis-image.png"
 html_title = "CyberGIS-Vis Documentation"
 html_sidebars = {
-    "_build/html/": ["index.html", "genindex.html"],
-    "**": ["sbt-sidebar-nav.html", "sbt-sidebar-footer.html"]
+    "**": ["sidebar-logo.html", "search-field.html"]
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

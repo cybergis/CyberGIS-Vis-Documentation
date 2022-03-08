@@ -32,4 +32,4 @@ python:
 #  system_packages: true
 
 conda:
-  environment: environment.yaml
+  environment: docs/environment.yaml

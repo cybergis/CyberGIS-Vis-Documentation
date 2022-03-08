@@ -25,6 +25,4 @@ dependencies:
   - pydot
   - sphinx==4.2.0
   - nbsphinx==0.8.1
-  - pip:
-    - sphinx_rtd_theme==1.0.0
-    - sphinx_book_theme==0.3.0.rc1
+prefix: C:\Users\bravo\anaconda3

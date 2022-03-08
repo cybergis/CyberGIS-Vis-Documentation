@@ -12,7 +12,7 @@ Welcome to CyberGIS-Vis-Documentation's documentation!
 
 
 
-Indices and tables
+Contents
 ==================
 
 * :ref:`genindex`

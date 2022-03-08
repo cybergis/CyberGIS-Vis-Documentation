@@ -3,16 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to CyberGIS-Vis-Documentation's documentation!
+CyberGIS-Vis-Documentation
 ======================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+======================================================
+**CyberGIS-Vis is an open-source software tool for interactive geospatial visualization and scalable visual analytics.**
+*CyberGIS-Vis* integrates cutting-edge cyberGIS and online visualization capabilities into a suite of software modules for visualization and visual analytical approaches to knowledge discovery based on geospatial data. Key features of the current CyberGIS-Vis implementation include: (1) comparative visualization of spatiotemporal patterns through choropleth maps; (2) dynamic cartographic mapping linked with charts to explore high-dimensional data; (3) reproducible visual analytics through integration with CyberGIS-Jupyter; and (4) multi-language support including both Python and Javascript. Firefox is the recommended web browser for reaping the best performance of CyberGIS-Vis.
+======================================================
 
-
-Indices and tables
+Contents
 ==================
 
 * :ref:`genindex`

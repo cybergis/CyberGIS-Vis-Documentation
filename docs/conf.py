@@ -12,6 +12,9 @@
 #
 import os
 import sys
+import sphinx_rtd_theme
+import sphinx_book_theme
+
 sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -45,6 +48,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 html_theme = "sphinx_book_theme"
+html_theme_path = [sphinx_book_theme.get_html_theme_path()]
 html_theme_options = {
     "repository_url": "https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2",
     "use_repository_button": True,

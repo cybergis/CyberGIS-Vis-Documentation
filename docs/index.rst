@@ -10,6 +10,8 @@ CyberGIS-Vis-Documentation
    :maxdepth: 2
    :caption: Contents:
 
+   CyberGISX
+
 ======================================================
 
 **CyberGIS-Vis is an open-source software tool for interactive geospatial visualization and scalable visual analytics.**

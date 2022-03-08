@@ -1,5 +1,4 @@
-name: docs
-
+name: base
 channels:
   - defaults
 dependencies:

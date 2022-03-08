@@ -31,5 +31,5 @@ python:
 #      path: another/package
 #  system_packages: true
 
-conda:
-  environment: docs/environment.yaml
+#conda:
+#  environment: docs/environment.yaml

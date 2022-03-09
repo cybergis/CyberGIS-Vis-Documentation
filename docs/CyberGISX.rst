@@ -10,31 +10,31 @@ Open up the CyberGIX, click the "new" button on the top right corner, and select
 	    !git clone https://github.com/cybergis/CyberGIS-Vis
 
 Open Jupyter notebook below and run.::
-        Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
-        Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb
+      Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
+      Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb
 
 
 To run in the loca environment, follow steps below.
 
 Download and install Anaconda at https://www.anaconda.com/.
 After installation is done, open "Anaconda Prompt" and enter command lines below to create an environment.::
-        conda create -n geo-env -c conda-forge geopandas
-        conda activate geo-env
-        conda install -c conda-forge jupyterlab
-        jupyter lab
+      conda create -n geo-env -c conda-forge geopandas
+      conda activate geo-env
+      conda install -c conda-forge jupyterlab
+      jupyter lab
 
 Open Python Script below.::
-        Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.py
-        Categorical_Data_Vis/Qualitative_Analysis_Mapper.py
+      Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.py
+      Categorical_Data_Vis/Qualitative_Analysis_Mapper.py
 
 Comment out like below. These are related to create URLs in the Jupyter Server.::
-	#from notebook import notebookapp
-	#servers = list(notebookapp.list_running_servers())
-        #servers1 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'view'
-        #servers2 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'edit'
-	#local_dir1 = servers1 + cwd + '/'
-	#local_dir2 = servers2 + cwd + '/'
+	   #from notebook import notebookapp
+	   #servers = list(notebookapp.list_running_servers())
+     #servers1 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'view'
+     #servers2 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'edit'
+	   #local_dir1 = servers1 + cwd + '/'
+	   #local_dir2 = servers2 + cwd + '/'
 
 Open Jupyter notebook below and run.::
-        Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
-        Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb
+     Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
+     Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb

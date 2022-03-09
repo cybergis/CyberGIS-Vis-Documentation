@@ -13,30 +13,30 @@ Adaptive Choropleth Mapper with Stacked Chart
 
 Adaptive Choropelth Mapper with Correlogram
 
-.. image:: _build/images/ACM_Correlogram.PNG
+.. image:: images/ACM_Correlogram.PNG
   :width: 400
   :alt: ACM_Correlogram
 
 Adaptive Choropleth Mapper with Scatter Plot
 
-.. image:: _build/images/ACM_Scatter.png
+.. image:: images/ACM_Scatter.png
   :width: 400
   :alt: ACM_Scatter
 
 Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP)
 
-.. image:: _build/images/ACM_PCP.png
+.. image:: images/ACM_PCP.png
   :width: 400
   :alt: ACM_PCP
 
 Adaptive Choropleth Mapper with Multiple Linked Chart (MLC)
 
-.. image:: _build/images/ACM_MLC.png
+.. image:: images/ACM_MLC.png
   :width: 400
   :alt: ACM_MLC
 
 Adaptive Choropleth Mapper with Comparison Linke Chart (CLC)
 
-.. image:: _build/images/ACM_CLC.png
+.. image::images/ACM_CLC.png
   :width: 400
   :alt: ACM_CL

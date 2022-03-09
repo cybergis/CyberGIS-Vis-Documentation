@@ -227,33 +227,39 @@ Open up the CyberGIX, click the “new” button on the top right corner, and se
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!git clone https://github.com/cybergis/CyberGIS-Vis
 </pre></div>
 </div>
-<dl class="simple">
-<dt>Open Jupyter notebook below and run.::</dt><dd><p>Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
-Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb</p>
-</dd>
-</dl>
+<p>Open Jupyter notebook below and run.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Quantitative_Data_Vis</span><span class="o">/</span><span class="n">Adaptive_Chropleth_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
+<span class="n">Categorical_Data_Vis</span><span class="o">/</span><span class="n">Qualitative_Analysis_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
+</pre></div>
+</div>
 <p>To run in the loca environment, follow steps below.</p>
 <p>Download and install Anaconda at <a class="reference external" href="https://www.anaconda.com/">https://www.anaconda.com/</a>.</p>
-<dl class="simple">
-<dt>After installation is done, open “Anaconda Prompt” and enter command lines below to create an environment.::</dt><dd><p>conda create -n geo-env -c conda-forge geopandas
-conda activate geo-env
-conda install -c conda-forge jupyterlab
-jupyter lab</p>
-</dd>
-<dt>Open Python Script below.::</dt><dd><p>Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.py
-Categorical_Data_Vis/Qualitative_Analysis_Mapper.py</p>
-</dd>
-<dt>Comment out like below. These are related to create URLs in the Jupyter Server.::</dt><dd><p>#from notebook import notebookapp
-#servers = list(notebookapp.list_running_servers())
-#servers1 = ‘<a class="reference external" href="https://cybergisx.cigi.illinois.edu'+servers[0">https://cybergisx.cigi.illinois.edu’+servers[0</a>][“base_url”]+ ‘view’
-#servers2 = ‘<a class="reference external" href="https://cybergisx.cigi.illinois.edu'+servers[0">https://cybergisx.cigi.illinois.edu’+servers[0</a>][“base_url”]+ ‘edit’
-#local_dir1 = servers1 + cwd + ‘/’
-#local_dir2 = servers2 + cwd + ‘/’</p>
-</dd>
-<dt>Open Jupyter notebook below and run.::</dt><dd><p>Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
-Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb</p>
-</dd>
-</dl>
+<p>After installation is done, open “Anaconda Prompt” and enter command lines below to create an environment.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">geo</span><span class="o">-</span><span class="n">env</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">geopandas</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">geo</span><span class="o">-</span><span class="n">env</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">jupyterlab</span>
+<span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
+<p>Open Python Script below.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Quantitative_Data_Vis</span><span class="o">/</span><span class="n">Adaptive_Chropleth_Mapper</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Categorical_Data_Vis</span><span class="o">/</span><span class="n">Qualitative_Analysis_Mapper</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Comment out like below. These are related to create URLs in the Jupyter Server.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#from notebook import notebookapp</span>
+<span class="c1">#servers = list(notebookapp.list_running_servers())</span>
+<span class="c1">#servers1 = &#39;https://cybergisx.cigi.illinois.edu&#39;+servers[0][&quot;base_url&quot;]+ &#39;view&#39;</span>
+<span class="c1">#servers2 = &#39;https://cybergisx.cigi.illinois.edu&#39;+servers[0][&quot;base_url&quot;]+ &#39;edit&#39;</span>
+<span class="c1">#local_dir1 = servers1 + cwd + &#39;/&#39;</span>
+<span class="c1">#local_dir2 = servers2 + cwd + &#39;/&#39;</span>
+</pre></div>
+</div>
+<p>Open Jupyter notebook below and run.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Quantitative_Data_Vis</span><span class="o">/</span><span class="n">Adaptive_Chropleth_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
+<span class="n">Categorical_Data_Vis</span><span class="o">/</span><span class="n">Qualitative_Analysis_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
+</pre></div>
+</div>
 </div>
 
 

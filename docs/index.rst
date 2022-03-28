@@ -8,7 +8,7 @@ CyberGIS-Vis-Documentation
 
 .. toctree::
    :maxdepth: 3
-   :caption: Contents:
+   :caption: Contents
 
    CyberGISX
    QuantDataVis

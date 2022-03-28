@@ -50,15 +50,23 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = "sphinx_book_theme"
 html_theme_path = [sphinx_book_theme.get_html_theme_path()]
 html_theme_options = {
-    "repository_url": "https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2",
-    "use_repository_button": True,
+    "logo_only": True,
+    "repository_url": "https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2", # git repository url
+    "use_repository_button": True, #show git repository
+    "toc_title": "Contents", #title of right side bar
+    "show_toc_level": 2,  # level of right side bar
+    "use_download_button": True, # allow user to download the page in raw, pdf, or ipynb if available.
+    "use_issues_button": True,
+    "use_edit_page_button": True,
 }
-html_logo = "cybergis-vis-image.png"
-html_title = "CyberGIS-Vis Documentation"
-html_sidebars = {
-    "**": ["sidebar-logo.html", "search-field.html"]
+html_logo = "cybergis-vis-image.png" #logo that shows on the top left corner
+#html_title = "CyberGIS-Vis Documentation" #this goes under the logo
+html_sidebars = { # side bar configuration
+    "**": ["sidebar-logo.html", "search-field.html","sbt-sidebar-nav.html"] # ** indicates configuration that applies to ALL pages.
 }
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_css_files = ["custom.css"]

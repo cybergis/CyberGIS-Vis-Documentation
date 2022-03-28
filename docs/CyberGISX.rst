@@ -45,7 +45,3 @@ Open Jupyter notebook below and run.::
 
   Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
   Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb
-
-.. raw:: html
-  
-    <iframe src="filename.html" height="345px" width="100%"></iframe>

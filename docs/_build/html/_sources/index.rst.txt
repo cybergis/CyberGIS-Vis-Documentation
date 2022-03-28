@@ -26,3 +26,10 @@ Contents
 -------------------
 * :ref:`modindex`
 * :ref:`search`
+
+
+iframe test
+--------------------
+.. raw:: html
+
+  <iframe src="http://su-gis.iptime.org/VNE/Chicago/index.html" width=100% height="402">iframe show up?</iframe>

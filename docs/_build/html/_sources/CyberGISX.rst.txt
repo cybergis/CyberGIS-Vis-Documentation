@@ -42,6 +42,10 @@ Comment out like below. These are related to create URLs in the Jupyter Server.:
   #local_dir2 = servers2 + cwd + '/'
 
 Open Jupyter notebook below and run.::
-  
+
   Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
   Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb
+
+.. raw:: html
+  
+    <iframe src="filename.html" height="345px" width="100%"></iframe>

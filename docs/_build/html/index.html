@@ -290,18 +290,28 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quick-start">
-   Quick Start
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting Started
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#contents">
-   Contents
+  <a class="reference internal nav-link" href="#running-in-cybergisx-temporarily-unavailable">
+   1. Running in CyberGISX (Temporarily Unavailable)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-in-local-environment">
+   2. Running in Local Environment
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#iframe-test">
    iframe test
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contents">
+   Contents
   </a>
  </li>
 </ul>
@@ -324,18 +334,28 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quick-start">
-   Quick Start
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting Started
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#contents">
-   Contents
+  <a class="reference internal nav-link" href="#running-in-cybergisx-temporarily-unavailable">
+   1. Running in CyberGISX (Temporarily Unavailable)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-in-local-environment">
+   2. Running in Local Environment
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#iframe-test">
    iframe test
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contents">
+   Contents
   </a>
  </li>
 </ul>
@@ -350,18 +370,79 @@ title="Print to PDF"
                 
   <div class="section" id="cybergis-vis-documentation">
 <h1>CyberGIS-Vis-Documentation<a class="headerlink" href="#cybergis-vis-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+<p><strong>CyberGIS-Vis is an open-source software tool for interactive geospatial visualization and scalable visual analytics.</strong>
+CyberGIS-Vis integrates cutting-edge cyberGIS and online visualization capabilities into a suite of software modules for visualization and visual analytical approaches to knowledge discovery based on geospatial data.
+Key features of the current CyberGIS-Vis implementation include:</p>
+<ul class="simple">
+<li><p>comparative visualization of spatiotemporal patterns through choropleth maps</p></li>
+<li><p>dynamic cartographic mapping linked with charts to explore high-dimensional data</p></li>
+<li><p>reproducible visual analytics through integration with CyberGIS-Jupyter</p></li>
+<li><p>multi-language support including both Python and Javascript</p></li>
+</ul>
+<p><a class="reference external" href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> is the recommended web browser for reaping the best performance of CyberGIS-Vis.</p>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>You can run CyberGIS-Vis in your Jupyter Notebook installed on your PC as well as in CybearGISX. We recommend that you use CyberGISX because all the required packages have been integrated in CyberGISX.</p>
+</div>
+<div class="section" id="running-in-cybergisx-temporarily-unavailable">
+<h2>1. Running in CyberGISX (Temporarily Unavailable)<a class="headerlink" href="#running-in-cybergisx-temporarily-unavailable" title="Permalink to this headline">¶</a></h2>
+<p>To use it in CyberGISX, follow steps below:</p>
+<p>If you do not have a CyerGISX account, create a CyberGISX account with your GitHub id at <a class="reference external" href="https://cybergisxhub.cigi.illinois.edu">https://cybergisxhub.cigi.illinois.edu</a></p>
+<p>Open up the CyberGIX, click the “new” button on the top right corner, and select python3 and enter the command line below to download CyberGIS-Vis.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!git clone https://github.com/cybergis/CyberGIS-Vis
+</pre></div>
+</div>
+<p>Open Jupyter notebook below and run.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Quantitative_Data_Vis</span><span class="o">/</span><span class="n">Adaptive_Chropleth_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
+<span class="n">Categorical_Data_Vis</span><span class="o">/</span><span class="n">Qualitative_Analysis_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-in-local-environment">
+<h2>2. Running in Local Environment<a class="headerlink" href="#running-in-local-environment" title="Permalink to this headline">¶</a></h2>
+<p>To run in a local environment, follow steps below.</p>
+<p>Download and install Anaconda at <a class="reference external" href="https://www.anaconda.com/">https://www.anaconda.com/</a>.</p>
+<p>After installation is done, open “Anaconda Prompt” and enter command lines below to create an environment.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">geo</span><span class="o">-</span><span class="n">env</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">geopandas</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">geo</span><span class="o">-</span><span class="n">env</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">jupyterlab</span>
+<span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
+<p>Open Python Script below.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Quantitative_Data_Vis</span><span class="o">/</span><span class="n">Adaptive_Chropleth_Mapper</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Categorical_Data_Vis</span><span class="o">/</span><span class="n">Qualitative_Analysis_Mapper</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Comment out like below. These are related to create URLs in the Jupyter Server.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#from notebook import notebookapp</span>
+<span class="c1">#servers = list(notebookapp.list_running_servers())</span>
+<span class="c1">#servers1 = &#39;https://cybergisx.cigi.illinois.edu&#39;+servers[0][&quot;base_url&quot;]+ &#39;view&#39;</span>
+<span class="c1">#servers2 = &#39;https://cybergisx.cigi.illinois.edu&#39;+servers[0][&quot;base_url&quot;]+ &#39;edit&#39;</span>
+<span class="c1">#local_dir1 = servers1 + cwd + &#39;/&#39;</span>
+<span class="c1">#local_dir2 = servers2 + cwd + &#39;/&#39;</span>
+</pre></div>
+</div>
+<p>Open Jupyter notebook below and run.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Quantitative_Data_Vis</span><span class="o">/</span><span class="n">Adaptive_Chropleth_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
+<span class="n">Categorical_Data_Vis</span><span class="o">/</span><span class="n">Qualitative_Analysis_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="iframe-test">
+<h2>iframe test<a class="headerlink" href="#iframe-test" title="Permalink to this headline">¶</a></h2>
+<iframe src="http://su-gis.iptime.org/VNE/Chicago/index.html" width=100% height="402">iframe show up?</iframe><div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="CyberGISX.html">Getting Started with CyberGISX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CyberGISX.html">Getting Started with CyberGISX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CyberGISX.html#running-in-cybergisx-temporarily-unavailable">1. Running in CyberGISX (Temporarily Unavailable)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CyberGISX.html#running-in-local-environment">2. Running in Local Environment</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="QuantDataVis.html">Quantitative Data visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CatDataVis.html">Categorical Data visualization</a></li>
 </ul>
 </div>
-<div class="section" id="quick-start">
-<h2>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
-<p><strong>CyberGIS-Vis is an open-source software tool for interactive geospatial visualization and scalable visual analytics.</strong></p>
-<p><em>CyberGIS-Vis</em> integrates cutting-edge cyberGIS and online visualization capabilities into a suite of software modules for visualization and visual analytical approaches to knowledge discovery based on geospatial data. Key features of the current CyberGIS-Vis implementation include: (1) comparative visualization of spatiotemporal patterns through choropleth maps; (2) dynamic cartographic mapping linked with charts to explore high-dimensional data; (3) reproducible visual analytics through integration with CyberGIS-Jupyter; and (4) multi-language support including both Python and Javascript. Firefox is the recommended web browser for reaping the best performance of CyberGIS-Vis.</p>
 </div>
 <div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
@@ -370,9 +451,6 @@ title="Print to PDF"
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 </div>
-<div class="section" id="iframe-test">
-<h2>iframe test<a class="headerlink" href="#iframe-test" title="Permalink to this headline">¶</a></h2>
-<iframe src="http://su-gis.iptime.org/VNE/Chicago/index.html" width=100% height="402">iframe show up?</iframe></div>
 </div>
 
 

@@ -3,9 +3,12 @@ Getting Started with CyberGISX
 You can run CyberGIS-Vis in your Jupyter Notebook installed on your PC as well as in CybearGISX. We recommend that you use CyberGISX because all the required packages have been integrated in CyberGISX.
 
 
+1. Running in CyberGISX (Temporarily Unavailable)
+------------------------------------------------------
 To use it in CyberGISX, follow steps below:
 
 If you do not have a CyerGISX account, create a CyberGISX account with your GitHub id at https://cybergisxhub.cigi.illinois.edu
+
 Open up the CyberGIX, click the "new" button on the top right corner, and select python3 and enter the command line below to download CyberGIS-Vis.::
 
   !git clone https://github.com/cybergis/CyberGIS-Vis
@@ -16,7 +19,9 @@ Open Jupyter notebook below and run.::
   Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb
 
 
-To run in the loca environment, follow steps below.
+2. Running in Local Environment
+------------------------------------------------------
+To run in a local environment, follow steps below.
 
 Download and install Anaconda at https://www.anaconda.com/.
 

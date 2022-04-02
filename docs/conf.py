@@ -70,3 +70,17 @@ html_sidebars = { # side bar configuration
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_css_files = ["custom.css"]
+
+# -- Options for PDF output -------------------------------------------------
+latex_elements = {
+    # The paper size (’letterpaper’ or ’a4paper’).
+    'papersize': 'letterpaper',
+    # The font size (’10pt’, ’11pt’ or ’12pt’).
+    'pointsize': '11pt',
+    # Additional stuff for the LaTeX preamble.
+    'preamble': r'''
+        \usepackage{charter}
+        \usepackage[defaultsans]{lato}
+        \usepackage{inconsolata}
+    ''',
+}

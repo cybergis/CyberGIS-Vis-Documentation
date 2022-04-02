@@ -6,6 +6,7 @@
 CyberGIS-Vis-Documentation
 ======================================================
 **CyberGIS-Vis is an open-source software tool for interactive geospatial visualization and scalable visual analytics.**
+
 CyberGIS-Vis integrates cutting-edge cyberGIS and online visualization capabilities into a suite of software modules for visualization and visual analytical approaches to knowledge discovery based on geospatial data.
 Key features of the current CyberGIS-Vis implementation include:
 
@@ -20,9 +21,9 @@ Getting Started
 ------------------------------------------------------
 You can run CyberGIS-Vis in your Jupyter Notebook installed on your PC as well as in CybearGISX. We recommend that you use CyberGISX because all the required packages have been integrated in CyberGISX.
 
-
-1. Running in CyberGISX (Temporarily Unavailable)
-------------------------------------------------------
+=====================================================
+Running in CyberGISX (Temporarily Unavailable)
+=====================================================
 To use it in CyberGISX, follow steps below:
 
 If you do not have a CyerGISX account, create a CyberGISX account with your GitHub id at https://cybergisxhub.cigi.illinois.edu
@@ -36,9 +37,9 @@ Open Jupyter notebook below and run.::
   Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
   Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb
 
-
-2. Running in Local Environment
-------------------------------------------------------
+=====================================================
+Running in Local Environment
+=====================================================
 To run in a local environment, follow steps below.
 
 Download and install Anaconda at https://www.anaconda.com/.
@@ -55,12 +56,14 @@ Open Python Script below.::
   Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.py
   Categorical_Data_Vis/Qualitative_Analysis_Mapper.py
 
-Comment out like below. These are related to create URLs in the Jupyter Server.::
+Comment and uncomment like below. These are related to create URLs in the Jupyter Server.::
 
   #from notebook import notebookapp
   #servers = list(notebookapp.list_running_servers())
   #servers1 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'view'
   #servers2 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'edit'
+  local_dir1 = cwd
+	local_dir2 = cwd
   #local_dir1 = servers1 + cwd + '/'
   #local_dir2 = servers2 + cwd + '/'
 
@@ -68,6 +71,38 @@ Open Jupyter notebook below and run.::
 
   Quantitative_Data_Vis/Adaptive_Chropleth_Mapper.ipynb
   Categorical_Data_Vis/Qualitative_Analysis_Mapper.ipynb
+
+
+Data
+-------
+
+Visualizations created by CyberGIS-Vis are using a small subset of `LTDB <https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm>`_.
+`LTDB <https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm>`_ provides socioeconomic and demographic data with harmonized boundaries from 1970 to 2010 decennially.
+If you need the entire dataset, visit `this website <https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm>`_ to download.
+
+
+Related Resources
+------------------
+
+* `CyberGISX <https://cybergisxhub.cigi.illinois.edu/>`_
+* `Leaflet <https://leafletjs.com/>`_
+* `PlotlyJS <https://plot.ly/javascript/>`_
+* `D3 <https://d3js.org/>`_
+* `GEOSNAP VIZ <https://github.com/spatialucr/geosnap-viz>`_
+
+Contributors
+-----------------
+The lead developer of CyberGIS-Vis is Dr. Su Yeon Han at the CyberGIS Center for Advanced Digital and Spatial Studies (CyberGIS Center)
+and the Principal Investigator of CyberGIS-Vis is Dr. Shaowen Wang at CyberGIS Center.
+This software repository is primarily maintained by CyberGIS Center. Please email any questions to help@cybergis.org.
+
+License
+---------------
+This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
+
+Funding
+---------------
+The CyberGIS-Vis project is supported by the CyberGIS Center for Advanced Digital and Spatial Studies at the University of Illinois at Urbana-Champaign.
 
 iframe test
 --------------------
@@ -77,16 +112,25 @@ iframe test
 
 
 .. toctree::
-  :maxdepth: 3
-  :caption: Contents
+  :maxdepth: 2
+  :caption: Quick Start
 
   CyberGISX
+
+.. toctree::
+  :maxdepth: 3
+  :caption: Visualization Modules
+
   QuantDataVis
   CatDataVis
 
+.. toctree::
+  :maxdepth: 1
+  :caption: Additional Resources
 
+  GitHub Repository <https://github.com/cybergis/CyberGIS-Vis>
 
-Contents
--------------------
-* :ref:`modindex`
-* :ref:`search`
+.. Contents
+.. -------------------
+.. * :ref:`modindex`
+.. * :ref:`search`

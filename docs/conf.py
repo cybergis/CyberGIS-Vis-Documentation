@@ -54,7 +54,7 @@ html_theme_options = {
     "repository_url": "https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2", # git repository url
     "use_repository_button": True, #show git repository
     "toc_title": "Contents", #title of right side bar
-    "show_toc_level": 2,  # level of right side bar
+    "show_toc_level": 3,  # level of right side bar
     "use_download_button": True, # allow user to download the page in raw, pdf, or ipynb if available.
     "use_issues_button": True,
     "use_edit_page_button": True,

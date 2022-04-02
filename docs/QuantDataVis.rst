@@ -2,40 +2,46 @@ Quantitative Data visualization
 =======================================
 
 Adaptive Choropleth Mapper (ACM)
+
 `Click to see more information <http://su-gis.iptime.org/ACM/>`_
 
-Adaptive Choropleth Mapper with Stacked Chart
+* Adaptive Choropleth Mapper with Stacked Chart
 - The Stacked Chart visualizes the temporal change
 
 .. image:: _static/images/ACM.PNG
   :width: 400
   :alt: ACM
 
-Adaptive Choropelth Mapper with Correlogram
+
+* Adaptive Choropelth Mapper with Correlogram
 
 .. image:: _static/images/ACM_Correlogram.PNG
   :width: 400
   :alt: ACM_Correlogram
 
-Adaptive Choropleth Mapper with Scatter Plot
+
+* Adaptive Choropleth Mapper with Scatter Plot
 
 .. image:: _static/images/ACM_Scatter.png
   :width: 400
   :alt: ACM_Scatter
 
-Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP)
+
+* Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP)
 
 .. image:: _static/images/ACM_PCP.png
   :width: 400
   :alt: ACM_PCP
 
-Adaptive Choropleth Mapper with Multiple Linked Chart (MLC)
+
+* Adaptive Choropleth Mapper with Multiple Linked Chart (MLC)
 
 .. image:: _static/images/ACM_MLC.png
   :width: 400
   :alt: ACM_MLC
 
-Adaptive Choropleth Mapper with Comparison Linke Chart (CLC)
+
+* Adaptive Choropleth Mapper with Comparison Linke Chart (CLC)
 
 .. image:: _static/images/ACM_CLC.png
   :width: 400

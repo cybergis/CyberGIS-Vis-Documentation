@@ -86,7 +86,7 @@
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Contents
+  Quick Start
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -95,6 +95,13 @@
    Getting Started with CyberGISX
   </a>
  </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Visualization Modules
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="QuantDataVis.html">
    Quantitative Data visualization
@@ -103,6 +110,18 @@
  <li class="toctree-l1">
   <a class="reference internal" href="CatDataVis.html">
    Categorical Data visualization
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Additional Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/cybergis/CyberGIS-Vis">
+   GitHub Repository
   </a>
  </li>
 </ul>
@@ -293,26 +312,50 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#getting-started">
    Getting Started
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-in-cybergisx-temporarily-unavailable">
+     Running in CyberGISX (Temporarily Unavailable)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-in-local-environment">
+     Running in Local Environment
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#running-in-cybergisx-temporarily-unavailable">
-   1. Running in CyberGISX (Temporarily Unavailable)
+  <a class="reference internal nav-link" href="#data">
+   Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#running-in-local-environment">
-   2. Running in Local Environment
+  <a class="reference internal nav-link" href="#related-resources">
+   Related Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contributors">
+   Contributors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   License
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funding">
+   Funding
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#iframe-test">
    iframe test
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#contents">
-   Contents
-  </a>
+  <ul class="visible nav section-nav flex-column">
+  </ul>
  </li>
 </ul>
 
@@ -337,26 +380,50 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#getting-started">
    Getting Started
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-in-cybergisx-temporarily-unavailable">
+     Running in CyberGISX (Temporarily Unavailable)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-in-local-environment">
+     Running in Local Environment
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#running-in-cybergisx-temporarily-unavailable">
-   1. Running in CyberGISX (Temporarily Unavailable)
+  <a class="reference internal nav-link" href="#data">
+   Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#running-in-local-environment">
-   2. Running in Local Environment
+  <a class="reference internal nav-link" href="#related-resources">
+   Related Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contributors">
+   Contributors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   License
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funding">
+   Funding
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#iframe-test">
    iframe test
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#contents">
-   Contents
-  </a>
+  <ul class="visible nav section-nav flex-column">
+  </ul>
  </li>
 </ul>
 
@@ -370,8 +437,8 @@ title="Print to PDF"
                 
   <div class="section" id="cybergis-vis-documentation">
 <h1>CyberGIS-Vis-Documentation<a class="headerlink" href="#cybergis-vis-documentation" title="Permalink to this headline">¶</a></h1>
-<p><strong>CyberGIS-Vis is an open-source software tool for interactive geospatial visualization and scalable visual analytics.</strong>
-CyberGIS-Vis integrates cutting-edge cyberGIS and online visualization capabilities into a suite of software modules for visualization and visual analytical approaches to knowledge discovery based on geospatial data.
+<p><strong>CyberGIS-Vis is an open-source software tool for interactive geospatial visualization and scalable visual analytics.</strong></p>
+<p>CyberGIS-Vis integrates cutting-edge cyberGIS and online visualization capabilities into a suite of software modules for visualization and visual analytical approaches to knowledge discovery based on geospatial data.
 Key features of the current CyberGIS-Vis implementation include:</p>
 <ul class="simple">
 <li><p>comparative visualization of spatiotemporal patterns through choropleth maps</p></li>
@@ -383,9 +450,8 @@ Key features of the current CyberGIS-Vis implementation include:</p>
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
 <p>You can run CyberGIS-Vis in your Jupyter Notebook installed on your PC as well as in CybearGISX. We recommend that you use CyberGISX because all the required packages have been integrated in CyberGISX.</p>
-</div>
 <div class="section" id="running-in-cybergisx-temporarily-unavailable">
-<h2>1. Running in CyberGISX (Temporarily Unavailable)<a class="headerlink" href="#running-in-cybergisx-temporarily-unavailable" title="Permalink to this headline">¶</a></h2>
+<h3>Running in CyberGISX (Temporarily Unavailable)<a class="headerlink" href="#running-in-cybergisx-temporarily-unavailable" title="Permalink to this headline">¶</a></h3>
 <p>To use it in CyberGISX, follow steps below:</p>
 <p>If you do not have a CyerGISX account, create a CyberGISX account with your GitHub id at <a class="reference external" href="https://cybergisxhub.cigi.illinois.edu">https://cybergisxhub.cigi.illinois.edu</a></p>
 <p>Open up the CyberGIX, click the “new” button on the top right corner, and select python3 and enter the command line below to download CyberGIS-Vis.:</p>
@@ -399,7 +465,7 @@ Key features of the current CyberGIS-Vis implementation include:</p>
 </div>
 </div>
 <div class="section" id="running-in-local-environment">
-<h2>2. Running in Local Environment<a class="headerlink" href="#running-in-local-environment" title="Permalink to this headline">¶</a></h2>
+<h3>Running in Local Environment<a class="headerlink" href="#running-in-local-environment" title="Permalink to this headline">¶</a></h3>
 <p>To run in a local environment, follow steps below.</p>
 <p>Download and install Anaconda at <a class="reference external" href="https://www.anaconda.com/">https://www.anaconda.com/</a>.</p>
 <p>After installation is done, open “Anaconda Prompt” and enter command lines below to create an environment.:</p>
@@ -414,11 +480,13 @@ Key features of the current CyberGIS-Vis implementation include:</p>
 <span class="n">Categorical_Data_Vis</span><span class="o">/</span><span class="n">Qualitative_Analysis_Mapper</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<p>Comment out like below. These are related to create URLs in the Jupyter Server.:</p>
+<p>Comment and uncomment like below. These are related to create URLs in the Jupyter Server.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#from notebook import notebookapp</span>
 <span class="c1">#servers = list(notebookapp.list_running_servers())</span>
 <span class="c1">#servers1 = &#39;https://cybergisx.cigi.illinois.edu&#39;+servers[0][&quot;base_url&quot;]+ &#39;view&#39;</span>
 <span class="c1">#servers2 = &#39;https://cybergisx.cigi.illinois.edu&#39;+servers[0][&quot;base_url&quot;]+ &#39;edit&#39;</span>
+<span class="n">local_dir1</span> <span class="o">=</span> <span class="n">cwd</span>
+      <span class="n">local_dir2</span> <span class="o">=</span> <span class="n">cwd</span>
 <span class="c1">#local_dir1 = servers1 + cwd + &#39;/&#39;</span>
 <span class="c1">#local_dir2 = servers2 + cwd + &#39;/&#39;</span>
 </pre></div>
@@ -429,27 +497,62 @@ Key features of the current CyberGIS-Vis implementation include:</p>
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<p>Visualizations created by CyberGIS-Vis are using a small subset of <a class="reference external" href="https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm">LTDB</a>.
+<a class="reference external" href="https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm">LTDB</a> provides socioeconomic and demographic data with harmonized boundaries from 1970 to 2010 decennially.
+If you need the entire dataset, visit <a class="reference external" href="https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm">this website</a> to download.</p>
+</div>
+<div class="section" id="related-resources">
+<h2>Related Resources<a class="headerlink" href="#related-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cybergisxhub.cigi.illinois.edu/">CyberGISX</a></p></li>
+<li><p><a class="reference external" href="https://leafletjs.com/">Leaflet</a></p></li>
+<li><p><a class="reference external" href="https://plot.ly/javascript/">PlotlyJS</a></p></li>
+<li><p><a class="reference external" href="https://d3js.org/">D3</a></p></li>
+<li><p><a class="reference external" href="https://github.com/spatialucr/geosnap-viz">GEOSNAP VIZ</a></p></li>
+</ul>
+</div>
+<div class="section" id="contributors">
+<h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h2>
+<p>The lead developer of CyberGIS-Vis is Dr. Su Yeon Han at the CyberGIS Center for Advanced Digital and Spatial Studies (CyberGIS Center)
+and the Principal Investigator of CyberGIS-Vis is Dr. Shaowen Wang at CyberGIS Center.
+This software repository is primarily maintained by CyberGIS Center. Please email any questions to <a class="reference external" href="mailto:help&#37;&#52;&#48;cybergis&#46;org">help<span>&#64;</span>cybergis<span>&#46;</span>org</a>.</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>This project is licensed under the Apache License 2.0 - see the LICENSE file for details.</p>
+</div>
+<div class="section" id="funding">
+<h2>Funding<a class="headerlink" href="#funding" title="Permalink to this headline">¶</a></h2>
+<p>The CyberGIS-Vis project is supported by the CyberGIS Center for Advanced Digital and Spatial Studies at the University of Illinois at Urbana-Champaign.</p>
+</div>
 <div class="section" id="iframe-test">
 <h2>iframe test<a class="headerlink" href="#iframe-test" title="Permalink to this headline">¶</a></h2>
 <iframe src="http://su-gis.iptime.org/VNE/Chicago/index.html" width=100% height="402">iframe show up?</iframe><div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Quick Start</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="CyberGISX.html">Getting Started with CyberGISX</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="CyberGISX.html#running-in-cybergisx-temporarily-unavailable">1. Running in CyberGISX (Temporarily Unavailable)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CyberGISX.html#running-in-local-environment">2. Running in Local Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CyberGISX.html#running-in-cybergisx-temporarily-unavailable">Running in CyberGISX (Temporarily Unavailable)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CyberGISX.html#running-in-local-environment">Running in Local Environment</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization Modules</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="QuantDataVis.html">Quantitative Data visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CatDataVis.html">Categorical Data visualization</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/cybergis/CyberGIS-Vis">GitHub Repository</a></li>
 </ul>
+</div>
 </div>
 </div>
 

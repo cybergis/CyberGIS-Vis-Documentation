@@ -63,7 +63,7 @@ Comment and uncomment like below. These are related to create URLs in the Jupyte
   #servers1 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'view'
   #servers2 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'edit'
   local_dir1 = cwd
-	local_dir2 = cwd
+  local_dir2 = cwd
   #local_dir1 = servers1 + cwd + '/'
   #local_dir2 = servers2 + cwd + '/'
 
@@ -92,13 +92,13 @@ Related Resources
 
 Contributors
 -----------------
-The lead developer of CyberGIS-Vis is Dr. Su Yeon Han at the CyberGIS Center for Advanced Digital and Spatial Studies (CyberGIS Center)
+The lead developer of CyberGIS-Vis is Dr. Su Yeon Han at the `CyberGIS Center for Advanced Digital and Spatial Studies (CyberGIS Center) <https://cybergis.illinois.edu/>`_
 and the Principal Investigator of CyberGIS-Vis is Dr. Shaowen Wang at CyberGIS Center.
 This software repository is primarily maintained by CyberGIS Center. Please email any questions to help@cybergis.org.
 
 License
 ---------------
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
+This project is licensed under the Apache License 2.0 - see the `LICENSE <https://github.com/cybergis/CyberGIS-Vis/blob/master/LICENSE>`_ file for details.
 
 Funding
 ---------------
@@ -111,6 +111,8 @@ iframe test
   <iframe src="http://su-gis.iptime.org/VNE/Chicago/index.html" width=100% height="402">iframe show up?</iframe>
 
 
+Table of Contents
+------------------
 .. toctree::
   :maxdepth: 2
   :caption: Quick Start
@@ -123,6 +125,8 @@ iframe test
 
   QuantDataVis
   CatDataVis
+  Adaptive_Chropleth_Mapper <Adaptive Choropleth Mapper>
+..  basic
 
 .. toctree::
   :maxdepth: 1

@@ -111,7 +111,7 @@ iframe test
   <iframe src="http://su-gis.iptime.org/VNE/Chicago/index.html" width=100% height="402">iframe show up?</iframe>
 
 
-Table of Contents 
+Table of Contents
 ------------------
 .. toctree::
   :maxdepth: 2
@@ -125,6 +125,8 @@ Table of Contents
 
   QuantDataVis
   CatDataVis
+  Adaptive_Chropleth_Mapper
+..  basic
 
 .. toctree::
   :maxdepth: 1

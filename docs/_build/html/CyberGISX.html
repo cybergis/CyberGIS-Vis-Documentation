@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Getting Started with CyberGISX &#8212; CyberGIS-Vis-Documentation  documentation</title>
     
     <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -24,15 +25,23 @@
     
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=6363cedec9f48b0e5c888349adb3b134b60ae2e1" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
     
     <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
+    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Quantitative Data visualization" href="QuantDataVis.html" />
@@ -85,7 +94,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
+        <p class="caption">
  <span class="caption-text">
   Quick Start
  </span>
@@ -97,7 +106,7 @@
   </a>
  </li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Visualization Modules
  </span>
@@ -114,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Additional Resources
  </span>
@@ -250,7 +259,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/CyberGISX.rst.txt"
+        <a href="_sources/CyberGISX.rst"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -358,10 +367,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="getting-started-with-cybergisx">
+  <section id="getting-started-with-cybergisx">
 <h1>Getting Started with CyberGISX<a class="headerlink" href="#getting-started-with-cybergisx" title="Permalink to this headline">¶</a></h1>
 <p>You can run CyberGIS-Vis in your Jupyter Notebook installed on your PC as well as in CybearGISX. We recommend that you use CyberGISX because all the required packages have been integrated in CyberGISX.</p>
-<div class="section" id="running-in-cybergisx-temporarily-unavailable">
+<section id="running-in-cybergisx-temporarily-unavailable">
 <h2>Running in CyberGISX (Temporarily Unavailable)<a class="headerlink" href="#running-in-cybergisx-temporarily-unavailable" title="Permalink to this headline">¶</a></h2>
 <p>To use it in CyberGISX, follow steps below:</p>
 <p>If you do not have a CyerGISX account, create a CyberGISX account with your GitHub id at <a class="reference external" href="https://cybergisxhub.cigi.illinois.edu">https://cybergisxhub.cigi.illinois.edu</a></p>
@@ -374,8 +383,8 @@ title="Print to PDF"
 <span class="n">Categorical_Data_Vis</span><span class="o">/</span><span class="n">Qualitative_Analysis_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="running-in-local-environment">
+</section>
+<section id="running-in-local-environment">
 <h2>Running in Local Environment<a class="headerlink" href="#running-in-local-environment" title="Permalink to this headline">¶</a></h2>
 <p>To run in a local environment, follow steps below.</p>
 <p>Download and install Anaconda at <a class="reference external" href="https://www.anaconda.com/">https://www.anaconda.com/</a>.</p>
@@ -396,6 +405,8 @@ title="Print to PDF"
 <span class="c1">#servers = list(notebookapp.list_running_servers())</span>
 <span class="c1">#servers1 = &#39;https://cybergisx.cigi.illinois.edu&#39;+servers[0][&quot;base_url&quot;]+ &#39;view&#39;</span>
 <span class="c1">#servers2 = &#39;https://cybergisx.cigi.illinois.edu&#39;+servers[0][&quot;base_url&quot;]+ &#39;edit&#39;</span>
+<span class="n">local_dir1</span> <span class="o">=</span> <span class="n">cwd</span>
+<span class="n">local_dir2</span> <span class="o">=</span> <span class="n">cwd</span>
 <span class="c1">#local_dir1 = servers1 + cwd + &#39;/&#39;</span>
 <span class="c1">#local_dir2 = servers2 + cwd + &#39;/&#39;</span>
 </pre></div>
@@ -405,8 +416,8 @@ title="Print to PDF"
 <span class="n">Categorical_Data_Vis</span><span class="o">/</span><span class="n">Qualitative_Analysis_Mapper</span><span class="o">.</span><span class="n">ipynb</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -439,7 +450,7 @@ title="Print to PDF"
   
     By Chaeyeon Han<br/>
   
-      &copy; Copyright 2022, Chaeyeon Han.<br/>
+      &copy; Copyright 2022, CyberGIS Center for Advanced Digital and Spatial Studies.<br/>
 </p>
         </footer>
     </div>

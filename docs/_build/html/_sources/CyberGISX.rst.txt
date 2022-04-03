@@ -43,6 +43,8 @@ Comment out like below. These are related to create URLs in the Jupyter Server.:
   #servers = list(notebookapp.list_running_servers())
   #servers1 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'view'
   #servers2 = 'https://cybergisx.cigi.illinois.edu'+servers[0]["base_url"]+ 'edit'
+  local_dir1 = cwd
+  local_dir2 = cwd
   #local_dir1 = servers1 + cwd + '/'
   #local_dir2 = servers2 + cwd + '/'
 

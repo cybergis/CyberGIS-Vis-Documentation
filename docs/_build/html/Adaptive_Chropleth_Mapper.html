@@ -1,0 +1,1949 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Example Visualizations using CyberGIS-Vis &#8212; CyberGIS-Vis-Documentation  documentation</title>
+    
+    <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
+    
+    <link rel="stylesheet"
+      href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+    
+      
+  
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=6363cedec9f48b0e5c888349adb3b134b60ae2e1" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    
+    <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
+    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Categorical Data visualization" href="CatDataVis.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
+    <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/cybergis-vis-image.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Quick Start
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="CyberGISX.html">
+   Getting Started with CyberGISX
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Visualization Modules
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="QuantDataVis.html">
+   Quantitative Data visualization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CatDataVis.html">
+   Categorical Data visualization
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Example Visualizations using CyberGIS-Vis
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Additional Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/cybergis/CyberGIS-Vis">
+   GitHub Repository
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2/issues/new?title=Issue%20on%20page%20%2FAdaptive_Chropleth_Mapper.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2/edit/master/Adaptive_Chropleth_Mapper.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Adaptive_Chropleth_Mapper.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentations-and-demos-about-cybergis-vis-are-available-at-https-github-com-cybergis-cybergis-vis">
+   Documentations and Demos about CyberGIS-Vis are available at: https://github.com/cybergis/CyberGIS-Vis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup-environment">
+   Setup environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizations-for-exploring-relationship-between-data">
+   Visualizations for Exploring Relationship between data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-input-data-socioeconomic-and-demographic-data-from-ltdb">
+     Set input data: Socioeconomic and Demographic Data from LTDB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-scatter-plot">
+     Adaptive Choropleth Mapper with Scatter Plot
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-correlogram">
+     Adaptive Choropleth Mapper with Correlogram
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-to-visulize-relationship-between-variables">
+     Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) to visulize relationship between variables.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-stacked-chart">
+     Adaptive Choropleth Mapper with Stacked Chart
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-top-10-bar-chart">
+     Adaptive Choropleth Mapper with Top 10 Bar Chart
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizations-for-spatiotemporal-data">
+   Visualizations for Spatiotemporal Data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-input-data-covid-19-data-and-the-number-of-visits-estimated-based-on-twitter-data">
+     Set input data: COVID-19 data and the number of visits estimated based on Twitter data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-multiple-line-chart-mlc">
+     Adaptive Choropleth Mapper with Multiple Line Chart (MLC)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-comparison-line-chart-clc">
+     Adaptive Choropleth Mapper with Comparison Line Chart (CLC)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-examples">
+   More Examples
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-input-data-hiv-data">
+     Set input data: HIV data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-for-time-series-visualization">
+     Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) for Time Series Visualization
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Example Visualizations using CyberGIS-Vis</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentations-and-demos-about-cybergis-vis-are-available-at-https-github-com-cybergis-cybergis-vis">
+   Documentations and Demos about CyberGIS-Vis are available at: https://github.com/cybergis/CyberGIS-Vis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup-environment">
+   Setup environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizations-for-exploring-relationship-between-data">
+   Visualizations for Exploring Relationship between data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-input-data-socioeconomic-and-demographic-data-from-ltdb">
+     Set input data: Socioeconomic and Demographic Data from LTDB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-scatter-plot">
+     Adaptive Choropleth Mapper with Scatter Plot
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-correlogram">
+     Adaptive Choropleth Mapper with Correlogram
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-to-visulize-relationship-between-variables">
+     Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) to visulize relationship between variables.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-stacked-chart">
+     Adaptive Choropleth Mapper with Stacked Chart
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-top-10-bar-chart">
+     Adaptive Choropleth Mapper with Top 10 Bar Chart
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizations-for-spatiotemporal-data">
+   Visualizations for Spatiotemporal Data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-input-data-covid-19-data-and-the-number-of-visits-estimated-based-on-twitter-data">
+     Set input data: COVID-19 data and the number of visits estimated based on Twitter data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-multiple-line-chart-mlc">
+     Adaptive Choropleth Mapper with Multiple Line Chart (MLC)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-comparison-line-chart-clc">
+     Adaptive Choropleth Mapper with Comparison Line Chart (CLC)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-examples">
+   More Examples
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-input-data-hiv-data">
+     Set input data: HIV data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-for-time-series-visualization">
+     Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) for Time Series Visualization
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="example-visualizations-using-cybergis-vis">
+<h1>Example Visualizations using CyberGIS-Vis<a class="headerlink" href="#example-visualizations-using-cybergis-vis" title="Permalink to this headline">¶</a></h1>
+<section id="documentations-and-demos-about-cybergis-vis-are-available-at-https-github-com-cybergis-cybergis-vis">
+<h2>Documentations and Demos about CyberGIS-Vis are available at: https://github.com/cybergis/CyberGIS-Vis<a class="headerlink" href="#documentations-and-demos-about-cybergis-vis-are-available-at-https-github-com-cybergis-cybergis-vis" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="setup-environment">
+<h2>Setup environment<a class="headerlink" href="#setup-environment" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="kn">from</span> <span class="nn">Adaptive_Choropleth_Mapper</span> <span class="kn">import</span> <span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">,</span> <span class="n">Adaptive_Choropleth_Mapper_log</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span><span class="o">/</span><span class="n">ipykernel_30572</span><span class="o">/</span><span class="mf">1378334812.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">Adaptive_Choropleth_Mapper</span> <span class="kn">import</span> <span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">,</span> <span class="n">Adaptive_Choropleth_Mapper_log</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="visualizations-for-exploring-relationship-between-data">
+<h2>Visualizations for Exploring Relationship between data<a class="headerlink" href="#visualizations-for-exploring-relationship-between-data" title="Permalink to this headline">¶</a></h2>
+<section id="set-input-data-socioeconomic-and-demographic-data-from-ltdb">
+<h3>Set input data: Socioeconomic and Demographic Data from LTDB<a class="headerlink" href="#set-input-data-socioeconomic-and-demographic-data-from-ltdb" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">input_attributes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;attributes/Los_Angeles_1980_1990_2000_2010.csv&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;geoid&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">})</span>
+<span class="n">input_attributes</span> <span class="o">=</span> <span class="n">input_attributes</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;geoid&#39;</span><span class="p">:</span> <span class="s1">&#39;geoid&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="s1">&#39;period&#39;</span><span class="p">})</span>
+<span class="n">input_attributes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geoid</th>
+      <th>period</th>
+      <th>n_asian_under_15</th>
+      <th>n_black_under_15</th>
+      <th>n_hispanic_under_15</th>
+      <th>n_native_under_15</th>
+      <th>n_white_under_15</th>
+      <th>n_persons_under_18</th>
+      <th>n_asian_over_60</th>
+      <th>n_black_over_60</th>
+      <th>...</th>
+      <th>n_vietnamese_persons</th>
+      <th>n_widowed_divorced</th>
+      <th>n_white_persons</th>
+      <th>n_total_housing_units_sample</th>
+      <th>p_white_over_60</th>
+      <th>p_black_over_60</th>
+      <th>p_hispanic_over_60</th>
+      <th>p_native_over_60</th>
+      <th>p_asian_over_60</th>
+      <th>p_disabled</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>06037101110</td>
+      <td>1980</td>
+      <td>4.512923</td>
+      <td>0.0</td>
+      <td>17.805532</td>
+      <td>3.938551</td>
+      <td>118.074478</td>
+      <td>159.429260</td>
+      <td>0.328213</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.164106</td>
+      <td>72.042664</td>
+      <td>NaN</td>
+      <td>216.045944</td>
+      <td>11.362683</td>
+      <td>0.0</td>
+      <td>0.181691</td>
+      <td>0.000000</td>
+      <td>0.055905</td>
+      <td>4.416492</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>06037101122</td>
+      <td>1980</td>
+      <td>49.069336</td>
+      <td>0.0</td>
+      <td>193.180725</td>
+      <td>42.705280</td>
+      <td>1281.120850</td>
+      <td>1729.904922</td>
+      <td>3.555239</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>1.795797</td>
+      <td>781.720006</td>
+      <td>NaN</td>
+      <td>2344.410583</td>
+      <td>11.367037</td>
+      <td>0.0</td>
+      <td>0.181974</td>
+      <td>0.000000</td>
+      <td>0.055802</td>
+      <td>4.420126</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>06037101210</td>
+      <td>1980</td>
+      <td>5.341171</td>
+      <td>0.0</td>
+      <td>143.240494</td>
+      <td>2.913366</td>
+      <td>473.907501</td>
+      <td>649.680603</td>
+      <td>2.913366</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>2.427805</td>
+      <td>468.080780</td>
+      <td>NaN</td>
+      <td>1035.216064</td>
+      <td>11.672832</td>
+      <td>0.0</td>
+      <td>1.294698</td>
+      <td>0.184957</td>
+      <td>0.123305</td>
+      <td>9.103987</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>06037101220</td>
+      <td>1980</td>
+      <td>5.658829</td>
+      <td>0.0</td>
+      <td>151.759506</td>
+      <td>3.086634</td>
+      <td>502.092438</td>
+      <td>688.319336</td>
+      <td>3.086634</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>2.572195</td>
+      <td>495.919190</td>
+      <td>NaN</td>
+      <td>1096.783936</td>
+      <td>11.672832</td>
+      <td>0.0</td>
+      <td>1.294698</td>
+      <td>0.184957</td>
+      <td>0.123305</td>
+      <td>9.103987</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>06037101300</td>
+      <td>1980</td>
+      <td>60.132671</td>
+      <td>0.0</td>
+      <td>100.549713</td>
+      <td>13.800941</td>
+      <td>691.032837</td>
+      <td>959.165405</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>5.914689</td>
+      <td>437.686981</td>
+      <td>NaN</td>
+      <td>1358.406860</td>
+      <td>13.719433</td>
+      <td>0.0</td>
+      <td>0.334620</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>6.383527</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>9361</th>
+      <td>06037980031</td>
+      <td>2010</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>281.000000</td>
+      <td>NaN</td>
+      <td>25.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9362</th>
+      <td>06037980033</td>
+      <td>2010</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9363</th>
+      <td>06037990100</td>
+      <td>2010</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9364</th>
+      <td>06037990200</td>
+      <td>2010</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9365</th>
+      <td>06037990300</td>
+      <td>2010</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>9366 rows × 192 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shapefile</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s2">&quot;shp/Los_Angeles_tract/Los_Angeles_2.shp&quot;</span><span class="p">)</span>
+<span class="n">shapefile</span> <span class="o">=</span> <span class="n">shapefile</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;tractID&#39;</span><span class="p">:</span> <span class="s1">&#39;geoid&#39;</span><span class="p">,</span> <span class="s1">&#39;tract_key&#39;</span><span class="p">:</span> <span class="s1">&#39;name&#39;</span><span class="p">})</span>
+<span class="n">shapefile</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geoid</th>
+      <th>name</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>06037101110</td>
+      <td>101110</td>
+      <td>POLYGON ((-118.29792 34.26322, -118.29696 34.2...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>06037101122</td>
+      <td>101122</td>
+      <td>POLYGON ((-118.29697 34.27881, -118.29410 34.2...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>06037101210</td>
+      <td>101210</td>
+      <td>POLYGON ((-118.29945 34.25598, -118.29792 34.2...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>06037101220</td>
+      <td>101220</td>
+      <td>POLYGON ((-118.27610 34.24648, -118.27618 34.2...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>06037101300</td>
+      <td>101300</td>
+      <td>POLYGON ((-118.26602 34.24036, -118.26657 34.2...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2339</th>
+      <td>06037920108</td>
+      <td>920108</td>
+      <td>POLYGON ((-118.55944 34.44441, -118.55957 34.4...</td>
+    </tr>
+    <tr>
+      <th>2340</th>
+      <td>06037920200</td>
+      <td>920200</td>
+      <td>POLYGON ((-118.57207 34.47017, -118.57211 34.4...</td>
+    </tr>
+    <tr>
+      <th>2341</th>
+      <td>06037990100</td>
+      <td>990100</td>
+      <td>POLYGON ((-118.94518 34.04309, -118.93753 34.0...</td>
+    </tr>
+    <tr>
+      <th>2342</th>
+      <td>06037990200</td>
+      <td>990200</td>
+      <td>POLYGON ((-118.42545 33.76085, -118.42816 33.7...</td>
+    </tr>
+    <tr>
+      <th>2343</th>
+      <td>06037990300</td>
+      <td>990300</td>
+      <td>POLYGON ((-118.24463 33.71077, -118.24457 33.7...</td>
+    </tr>
+  </tbody>
+</table>
+<p>2344 rows × 3 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="adaptive-choropleth-mapper-with-scatter-plot">
+<h3>Adaptive Choropleth Mapper with Scatter Plot<a class="headerlink" href="#adaptive-choropleth-mapper-with-scatter-plot" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_Scatter</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Scatter Plot&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;LA_Scatter&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">input_attributes</span><span class="p">,</span>   
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile</span><span class="p">,</span>
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2010</span><span class="p">],</span>
+    <span class="s1">&#39;shortLabelCSV&#39;</span><span class="p">:</span> <span class="s2">&quot;attributes/LTDB_ShortLabel.csv&quot;</span><span class="p">,</span>        
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+        <span class="s2">&quot;p_nonhisp_white_persons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_nonhisp_black_persons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_hispanic_persons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_asian_persons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_foreign_born_pop&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_edu_college_greater&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_unemployment_rate&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_employed_manufacturing&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_poverty_rate&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_vacant_housing_units&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_owner_occupied_units&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_housing_units_multiunit_structures&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;median_home_value&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_structures_30_old&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_household_recent_move&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_persons_under_18&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_persons_over_60&quot;</span><span class="p">,</span>     
+    <span class="p">],</span>
+    <span class="s1">&#39;InitialLayers&#39;</span><span class="p">:[</span><span class="s2">&quot;2010_</span><span class="si">% e</span><span class="s2">du college greater&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_</span><span class="si">% e</span><span class="s2">mployed manufacturing&quot;</span> <span class="p">],</span>
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;470px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;450px&quot;</span><span class="p">,</span> 
+    <span class="s1">&#39;Scatter_Plot&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>        
+<span class="p">}</span> 
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_Scatter</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_Scatter</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output directory :  ACM_LA_Scatter
+To see your visualization, click the URL below (or locate the files):
+C:\Users\bravo\myworks\CyberGIS-Vis-master\CyberGIS-Vis-master\Quantitative_Data_Vis\ACM_LA_Scatter\index.html
+To access all visualizations that you have created, click the URL below (or locate the files):
+C:\Users\bravo\myworks\CyberGIS-Vis-master\CyberGIS-Vis-master\Quantitative_Data_Vis/ACM_log.html
+Advanced options are available in 
+C:\Users\bravo\myworks\CyberGIS-Vis-master\CyberGIS-Vis-master\Quantitative_Data_VisACM_LA_Scatter/data/CONFIG_LA_Scatter.js
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="adaptive-choropleth-mapper-with-correlogram">
+<h3>Adaptive Choropleth Mapper with Correlogram<a class="headerlink" href="#adaptive-choropleth-mapper-with-correlogram" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_Correlogram</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Correlogram&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;LA_Correlogram&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">input_attributes</span><span class="p">,</span>   
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span>
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2010</span><span class="p">],</span>
+    <span class="s1">&#39;shortLabelCSV&#39;</span><span class="p">:</span> <span class="s2">&quot;attributes/LTDB_ShortLabel.csv&quot;</span><span class="p">,</span>       
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+        <span class="s2">&quot;p_nonhisp_white_persons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_nonhisp_black_persons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_hispanic_persons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_asian_persons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_foreign_born_pop&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_edu_college_greater&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_unemployment_rate&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_employed_manufacturing&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_poverty_rate&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_vacant_housing_units&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_owner_occupied_units&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_housing_units_multiunit_structures&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;median_home_value&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_structures_30_old&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_household_recent_move&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_persons_under_18&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_persons_over_60&quot;</span><span class="p">,</span>     
+    <span class="p">],</span>
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Correlogram&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>        
+<span class="p">}</span> 
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_Correlogram</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_Correlogram</span><span class="p">)</span>  
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output directory :  ACM_LA_Correlogram
+To see your visualization, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis/ACM_LA_Correlogram/index.html
+To access all visualizations that you have created, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis//ACM_log.html
+Advanced options are available in 
+https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_Data_Vis/ACM_LA_Correlogram/data/CONFIG_LA_Correlogram.js
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-to-visulize-relationship-between-variables">
+<h3>Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) to visulize relationship between variables.<a class="headerlink" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-to-visulize-relationship-between-variables" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_PCP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Paralle Coordinate Plot&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;Census_PCP&quot;</span><span class="p">,</span>                                      <span class="c1"># max 30 character     </span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">input_attributes</span><span class="p">,</span>   
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile</span><span class="p">,</span> 
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2010</span><span class="p">],</span>
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+            <span class="s2">&quot;p_nonhisp_white_persons&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_nonhisp_black_persons&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_hispanic_persons&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_asian_persons&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_employed_manufacturing&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_poverty_rate&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_foreign_born_pop&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_persons_under_18&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_persons_over_60&quot;</span><span class="p">,</span>  
+            <span class="s2">&quot;p_edu_college_greater&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_unemployment_rate&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_employed_professional&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_vacant_housing_units&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_owner_occupied_units&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_housing_units_multiunit_structures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;median_home_value&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_structures_30_old&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_household_recent_move&quot;</span><span class="p">,</span>
+      
+        <span class="p">],</span>
+    <span class="s1">&#39;shortLabelCSV&#39;</span><span class="p">:</span> <span class="s2">&quot;attributes/LTDB_ShortLabel.csv&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span> 
+    <span class="s1">&#39;Top10_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>    
+    <span class="s1">&#39;Parallel_Coordinates_Plot&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfPCP&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+    <span class="s1">&#39;InitialVariablePCP&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2010_% white (non-Hispanic)&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% black (non-Hispanic)&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% Hispanic&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% Asian &amp; PI race&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% professional employees&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% manufacturing employees&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_</span><span class="si">% i</span><span class="s2">n poverty&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_</span><span class="si">% f</span><span class="s2">oreign born&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% 17 and under (total)&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% 60 and older&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_PCP</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_PCP</span><span class="p">)</span>  
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output directory :  ACM_Census_PCP
+To see your visualization, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis/ACM_Census_PCP/index.html
+To access all visualizations that you have created, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis//ACM_log.html
+Advanced options are available in 
+https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_Data_Vis/ACM_Census_PCP/data/CONFIG_Census_PCP.js
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="adaptive-choropleth-mapper-with-stacked-chart">
+<h3>Adaptive Choropleth Mapper with Stacked Chart<a class="headerlink" href="#adaptive-choropleth-mapper-with-stacked-chart" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_Stacked</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Stacked Chart&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;LA_Stacked&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">input_attributes</span><span class="p">,</span>   
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile</span><span class="p">,</span>
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1980</span><span class="p">,</span> <span class="mi">1990</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2010</span><span class="p">],</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s1">&#39;shortLabelCSV&#39;</span><span class="p">:</span> <span class="s2">&quot;attributes/LTDB_ShortLabel.csv&quot;</span><span class="p">,</span>       
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+            <span class="s2">&quot;p_nonhisp_white_persons&quot;</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span>    
+    <span class="s1">&#39;Stacked_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>  <span class="c1">#Comment out if you do not want to visualize this chart       </span>
+<span class="p">}</span>  
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_Stacked</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_Stacked</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output directory :  ACM_LA_Stacked
+To see your visualization, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis/ACM_LA_Stacked/index.html
+To access all visualizations that you have created, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis//ACM_log.html
+Advanced options are available in 
+https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_Data_Vis/ACM_LA_Stacked/data/CONFIG_LA_Stacked.js
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="adaptive-choropleth-mapper-with-top-10-bar-chart">
+<h3>Adaptive Choropleth Mapper with Top 10 Bar Chart<a class="headerlink" href="#adaptive-choropleth-mapper-with-top-10-bar-chart" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_bar</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Stacked Chart&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;LA_bar&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">input_attributes</span><span class="p">,</span>   
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile</span><span class="p">,</span>
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1980</span><span class="p">,</span> <span class="mi">1990</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2010</span><span class="p">],</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s1">&#39;shortLabelCSV&#39;</span><span class="p">:</span> <span class="s2">&quot;attributes/LTDB_ShortLabel.csv&quot;</span><span class="p">,</span>      
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.           </span>
+        <span class="s2">&quot;p_other_language&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_female_headed_families&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;per_capita_income&quot;</span><span class="p">,</span>     
+    <span class="p">],</span>
+    <span class="s1">&#39;Top10_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>  <span class="c1">#Comment out if you do not want to visualize this chart      </span>
+<span class="p">}</span>  
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_bar</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_bar</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output directory :  ACM_LA_bar
+To see your visualization, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis/ACM_LA_bar/index.html
+To access all visualizations that you have created, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis//ACM_log.html
+Advanced options are available in 
+https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_Data_Vis/ACM_LA_bar/data/CONFIG_LA_bar.js
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="visualizations-for-spatiotemporal-data">
+<h2>Visualizations for Spatiotemporal Data<a class="headerlink" href="#visualizations-for-spatiotemporal-data" title="Permalink to this headline">¶</a></h2>
+<section id="set-input-data-covid-19-data-and-the-number-of-visits-estimated-based-on-twitter-data">
+<h3>Set input data: COVID-19 data and the number of visits estimated based on Twitter data<a class="headerlink" href="#set-input-data-covid-19-data-and-the-number-of-visits-estimated-based-on-twitter-data" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Covid_Visits</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;attributes/Covid_Visits.csv&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;geoid&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">})</span>
+<span class="n">Covid_Visits</span> <span class="o">=</span> <span class="n">Covid_Visits</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;geoid&#39;</span><span class="p">:</span> <span class="s1">&#39;geoid&#39;</span><span class="p">})</span>
+<span class="n">Covid_Visits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geoid</th>
+      <th>period</th>
+      <th>Confirmed Rate</th>
+      <th>Death Rate</th>
+      <th>The Number of Visits from Outside to Inside of the selected MSA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2020-02-16</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>2020-02-16</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>2020-02-16</td>
+      <td>0</td>
+      <td>0</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>2020-02-16</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>2020-02-16</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>53723</th>
+      <td>48260</td>
+      <td>2020-12-27</td>
+      <td>-9999</td>
+      <td>-9999</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>53724</th>
+      <td>48300</td>
+      <td>2020-12-27</td>
+      <td>-9999</td>
+      <td>-9999</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>53725</th>
+      <td>48460</td>
+      <td>2020-12-27</td>
+      <td>-9999</td>
+      <td>-9999</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>53726</th>
+      <td>48540</td>
+      <td>2020-12-27</td>
+      <td>-9999</td>
+      <td>-9999</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>53727</th>
+      <td>48580</td>
+      <td>2020-12-27</td>
+      <td>-9999</td>
+      <td>-9999</td>
+      <td>35</td>
+    </tr>
+  </tbody>
+</table>
+<p>53728 rows × 5 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shapefile_MSA</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s2">&quot;shp/MSA_country/msa_country.shp&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;GEOID&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">})</span>
+<span class="n">shapefile_MSA</span> <span class="o">=</span> <span class="n">shapefile_MSA</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;GEOID&#39;</span><span class="p">:</span> <span class="s1">&#39;geoid&#39;</span><span class="p">,</span> <span class="s1">&#39;NAME_1&#39;</span><span class="p">:</span><span class="s1">&#39;name&#39;</span><span class="p">})</span>
+<span class="n">shapefile_MSA</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geoid</th>
+      <th>name</th>
+      <th>region</th>
+      <th>LON</th>
+      <th>LAT</th>
+      <th>ISO3</th>
+      <th>ISO3_1</th>
+      <th>Shape_Leng</th>
+      <th>Shape_Area</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12660</td>
+      <td>Baraboo, WI</td>
+      <td>WI</td>
+      <td>-89.950</td>
+      <td>43.430</td>
+      <td>12660</td>
+      <td>None</td>
+      <td>2.322364</td>
+      <td>0.244303</td>
+      <td>POLYGON ((-90.31241 43.64100, -90.29665 43.641...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>38300</td>
+      <td>Pittsburgh, PA</td>
+      <td>PA</td>
+      <td>-79.830</td>
+      <td>40.440</td>
+      <td>38300</td>
+      <td>None</td>
+      <td>7.137698</td>
+      <td>1.468706</td>
+      <td>POLYGON ((-80.51922 39.96243, -80.51921 39.963...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>17460</td>
+      <td>Cleveland-Elyria, OH</td>
+      <td>OH</td>
+      <td>-81.680</td>
+      <td>41.380</td>
+      <td>17460</td>
+      <td>None</td>
+      <td>4.210584</td>
+      <td>0.562277</td>
+      <td>POLYGON ((-82.34808 41.42840, -82.34412 41.429...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>38920</td>
+      <td>Port Lavaca, TX</td>
+      <td>TX</td>
+      <td>-96.640</td>
+      <td>28.500</td>
+      <td>38920</td>
+      <td>None</td>
+      <td>3.901207</td>
+      <td>0.136378</td>
+      <td>MULTIPOLYGON (((-96.38985 28.38963, -96.38527 ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>48660</td>
+      <td>Wichita Falls, TX</td>
+      <td>TX</td>
+      <td>-98.490</td>
+      <td>33.770</td>
+      <td>48660</td>
+      <td>None</td>
+      <td>3.937540</td>
+      <td>0.674297</td>
+      <td>POLYGON ((-98.95383 33.49638, -98.95378 33.531...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1166</th>
+      <td>238</td>
+      <td>Saint Barthelemy, NORTH AMERICA</td>
+      <td>NORTH AMERICA</td>
+      <td>-63.062</td>
+      <td>18.047</td>
+      <td>BLM</td>
+      <td>None</td>
+      <td>0.309464</td>
+      <td>0.004696</td>
+      <td>POLYGON ((-63.02834 18.01555, -63.03334 18.015...</td>
+    </tr>
+    <tr>
+      <th>1167</th>
+      <td>239</td>
+      <td>Guernsey, EURPOE</td>
+      <td>EURPOE</td>
+      <td>-2.576</td>
+      <td>49.459</td>
+      <td>GGY</td>
+      <td>None</td>
+      <td>0.425255</td>
+      <td>0.009359</td>
+      <td>POLYGON ((-2.59083 49.42249, -2.59722 49.42249...</td>
+    </tr>
+    <tr>
+      <th>1168</th>
+      <td>240</td>
+      <td>Jersey, EURPOE</td>
+      <td>EURPOE</td>
+      <td>-2.129</td>
+      <td>49.219</td>
+      <td>JEY</td>
+      <td>None</td>
+      <td>0.579127</td>
+      <td>0.015408</td>
+      <td>POLYGON ((-2.01500 49.21417, -2.02111 49.17722...</td>
+    </tr>
+    <tr>
+      <th>1169</th>
+      <td>241</td>
+      <td>South Georgia South Sandwich Islands, ANTARCTICA</td>
+      <td>ANTARCTICA</td>
+      <td>-35.928</td>
+      <td>-54.658</td>
+      <td>SGS</td>
+      <td>None</td>
+      <td>9.364081</td>
+      <td>0.542074</td>
+      <td>MULTIPOLYGON (((-27.32584 -59.42722, -27.29806...</td>
+    </tr>
+    <tr>
+      <th>1170</th>
+      <td>242</td>
+      <td>Taiwan, ASIA</td>
+      <td>ASIA</td>
+      <td>120.946</td>
+      <td>23.754</td>
+      <td>TWN</td>
+      <td>None</td>
+      <td>10.419518</td>
+      <td>3.221167</td>
+      <td>MULTIPOLYGON (((121.57639 22.00139, 121.57027 ...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1171 rows × 10 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="adaptive-choropleth-mapper-with-multiple-line-chart-mlc">
+<h3>Adaptive Choropleth Mapper with Multiple Line Chart (MLC)<a class="headerlink" href="#adaptive-choropleth-mapper-with-multiple-line-chart-mlc" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_MLC_COVID</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Covid-19 Risk Assessment using Twitter, Metropolitan Statistical Areas, USA&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Subject&#39;</span><span class="p">:</span> <span class="s2">&quot;Temporal Patterns&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;COVID_MLC&quot;</span><span class="p">,</span>  <span class="c1"># max 30 character      </span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">Covid_Visits</span><span class="p">,</span>   
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile_MSA</span><span class="p">,</span> 
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="s2">&quot;All&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+            <span class="s2">&quot;Confirmed Rate&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Death Rate&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;The Number of Visits from Outside to Inside of the selected MSA&quot;</span>
+        <span class="p">],</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="s1">&#39;InitialLayers&#39;</span><span class="p">:[</span><span class="s2">&quot;2020-03-15_Confirmed Rate&quot;</span> <span class="p">,</span> <span class="s2">&quot;2020-12-27_Confirmed Rate&quot;</span><span class="p">],</span>
+    <span class="s1">&#39;Initial_map_center&#39;</span><span class="p">:[</span><span class="mi">37</span><span class="p">,</span> <span class="o">-</span><span class="mi">97</span><span class="p">],</span>
+    <span class="s1">&#39;Initial_map_zoom_level&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>    
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;650px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;400px&quot;</span><span class="p">,</span> 
+    <span class="s1">&#39;Top10_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>     
+    <span class="s1">&#39;Multiple_Line_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfMLC&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+    <span class="s1">&#39;titlesOfMLC&#39;</span><span class="p">:[</span><span class="s2">&quot;1. COVID-19 Confirmed Cases (/100k pop)&quot;</span><span class="p">,</span> <span class="s2">&quot;2. COVID-19 Death Cases (/100k pop)&quot;</span><span class="p">,</span> <span class="s2">&quot;3. The Number of Visits from Outside to Inside of the selected MSA&quot;</span><span class="p">],</span>
+    <span class="s1">&#39;DefaultRegion_MLC&#39;</span><span class="p">:</span><span class="s2">&quot;35620&quot;</span> 
+<span class="p">}</span>
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_MLC_COVID</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_MLC_COVID</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/data/cigi/cybergisx-easybuild/conda/python3-0.9.0/lib/python3.8/site-packages/pandas/core/dtypes/cast.py:1990: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  result[:] = values
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output directory :  ACM_COVID_MLC
+To see your visualization, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis/ACM_COVID_MLC/index.html
+To access all visualizations that you have created, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis//ACM_log.html
+Advanced options are available in 
+https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_Data_Vis/ACM_COVID_MLC/data/CONFIG_COVID_MLC.js
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="adaptive-choropleth-mapper-with-comparison-line-chart-clc">
+<h3>Adaptive Choropleth Mapper with Comparison Line Chart (CLC)<a class="headerlink" href="#adaptive-choropleth-mapper-with-comparison-line-chart-clc" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_CLC_COVID</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Comparison of COVID-19 Confirmed Rate between Metropolitan Statistical Areas, USA&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Subject&#39;</span><span class="p">:</span> <span class="s2">&quot;Temporal Patterns&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;COVID_CLC&quot;</span><span class="p">,</span>                                      <span class="c1"># max 30 character      </span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">Covid_Visits</span><span class="p">,</span>   
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile_MSA</span><span class="p">,</span> 
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="s2">&quot;All&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+            <span class="s2">&quot;Confirmed Rate&quot;</span>
+        <span class="p">],</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="s1">&#39;InitialLayers&#39;</span><span class="p">:[</span><span class="s2">&quot;2020-04-19_Confirmed Rate&quot;</span> <span class="p">,</span> <span class="s2">&quot;2020-11-01_Confirmed Rate&quot;</span><span class="p">],</span>
+    <span class="s1">&#39;Initial_map_center&#39;</span><span class="p">:[</span><span class="mi">37</span><span class="p">,</span> <span class="o">-</span><span class="mi">97</span><span class="p">],</span>
+    <span class="s1">&#39;Initial_map_zoom_level&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>    
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;650px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;400px&quot;</span><span class="p">,</span>     
+    <span class="s1">&#39;Top10_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>     
+    <span class="s1">&#39;Comparision_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfCLC&#39;</span><span class="p">:</span> <span class="mi">46</span><span class="p">,</span>
+    <span class="s1">&#39;DefaultRegion_CLC&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;35620&quot;</span><span class="p">,</span> <span class="s2">&quot;16980&quot;</span><span class="p">]</span> 
+<span class="p">}</span>
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_CLC_COVID</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_CLC_COVID</span><span class="p">)</span>  
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output directory :  ACM_COVID_CLC
+To see your visualization, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis/ACM_COVID_CLC/index.html
+To access all visualizations that you have created, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis//ACM_log.html
+Advanced options are available in 
+https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_Data_Vis/ACM_COVID_CLC/data/CONFIG_COVID_CLC.js
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="more-examples">
+<h2>More Examples<a class="headerlink" href="#more-examples" title="Permalink to this headline">¶</a></h2>
+<section id="set-input-data-hiv-data">
+<h3>Set input data: HIV data<a class="headerlink" href="#set-input-data-hiv-data" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">input_attributes_hiv</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;attributes/HIV_US_multiple_long.csv&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;geoid&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">})</span>
+<span class="n">input_attributes_hiv</span> <span class="o">=</span> <span class="n">input_attributes_hiv</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;geoid&#39;</span><span class="p">:</span> <span class="s1">&#39;geoid&#39;</span><span class="p">})</span>
+<span class="n">input_attributes_hiv</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geoid</th>
+      <th>period</th>
+      <th>Health Care Center (/100k pop)</th>
+      <th>HIV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1001</td>
+      <td>2012</td>
+      <td>3.796153</td>
+      <td>15.50</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1003</td>
+      <td>2012</td>
+      <td>2.507915</td>
+      <td>7.50</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1005</td>
+      <td>2012</td>
+      <td>6.641990</td>
+      <td>14.71</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1007</td>
+      <td>2012</td>
+      <td>4.207311</td>
+      <td>17.70</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1009</td>
+      <td>2012</td>
+      <td>2.630077</td>
+      <td>6.92</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>21954</th>
+      <td>56037</td>
+      <td>2018</td>
+      <td>4.474590</td>
+      <td>9.15</td>
+    </tr>
+    <tr>
+      <th>21955</th>
+      <td>56039</td>
+      <td>2018</td>
+      <td>0.265288</td>
+      <td>17.17</td>
+    </tr>
+    <tr>
+      <th>21956</th>
+      <td>56041</td>
+      <td>2018</td>
+      <td>4.603247</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>21957</th>
+      <td>56043</td>
+      <td>2018</td>
+      <td>7.180956</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>21958</th>
+      <td>56045</td>
+      <td>2018</td>
+      <td>0.265288</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+<p>21959 rows × 4 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shapefile_us</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s2">&quot;shp/US/counties.shp&quot;</span><span class="p">)</span>
+<span class="n">shapefile_us</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geoid</th>
+      <th>name</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2013</td>
+      <td>Aleutians East,AK</td>
+      <td>MULTIPOLYGON (((-162.63769 54.80112, -162.6440...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2016</td>
+      <td>Aleutians West,AK</td>
+      <td>MULTIPOLYGON (((177.44593 52.11133, 177.44302 ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>28107</td>
+      <td>Panola,MS</td>
+      <td>POLYGON ((-90.19854 34.51109, -90.19863 34.554...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>28101</td>
+      <td>Newton,MS</td>
+      <td>POLYGON ((-88.91452 32.57695, -88.91559 32.558...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>28027</td>
+      <td>Coahoma,MS</td>
+      <td>POLYGON ((-90.65700 33.98759, -90.66036 33.987...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3216</th>
+      <td>27057</td>
+      <td>Hubbard,MN</td>
+      <td>POLYGON ((-95.16917 47.15252, -95.16909 47.182...</td>
+    </tr>
+    <tr>
+      <th>3217</th>
+      <td>27169</td>
+      <td>Winona,MN</td>
+      <td>POLYGON ((-92.07949 44.10699, -92.07921 44.117...</td>
+    </tr>
+    <tr>
+      <th>3218</th>
+      <td>2270</td>
+      <td>None</td>
+      <td>POLYGON ((-160.85114 63.01269, -160.85156 62.9...</td>
+    </tr>
+    <tr>
+      <th>3219</th>
+      <td>51515</td>
+      <td>None</td>
+      <td>POLYGON ((-79.54339 37.32615, -79.54230 37.334...</td>
+    </tr>
+    <tr>
+      <th>3220</th>
+      <td>46113</td>
+      <td>None</td>
+      <td>POLYGON ((-102.79211 42.99998, -102.86790 42.9...</td>
+    </tr>
+  </tbody>
+</table>
+<p>3221 rows × 3 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-for-time-series-visualization">
+<h3>Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) for Time Series Visualization<a class="headerlink" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-for-time-series-visualization" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_PCP_hiv</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Paralle Coordinate Plot&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;HIV_PCP&quot;</span><span class="p">,</span>                                      <span class="c1"># max 30 character     </span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">input_attributes_hiv</span><span class="p">,</span>   
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile_us</span><span class="p">,</span> 
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2012</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">2016</span><span class="p">,</span> <span class="mi">2017</span><span class="p">,</span> <span class="mi">2018</span><span class="p">],</span>
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+            <span class="s2">&quot;HIV&quot;</span><span class="p">,</span>
+            <span class="c1">#&quot;Health Care Center (/100k pop)&quot;</span>
+        <span class="p">],</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="s1">&#39;Initial_map_center&#39;</span><span class="p">:[</span><span class="mi">37</span><span class="p">,</span> <span class="o">-</span><span class="mi">97</span><span class="p">],</span>
+    <span class="s1">&#39;Initial_map_zoom_level&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>    
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;650px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;410px&quot;</span><span class="p">,</span>     
+    <span class="s1">&#39;Top10_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>    
+    <span class="s1">&#39;Parallel_Coordinates_Plot&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfPCP&#39;</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_PCP_hiv</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_PCP_hiv</span><span class="p">)</span>  
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/data/cigi/cybergisx-easybuild/conda/python3-0.9.0/lib/python3.8/site-packages/pandas/core/dtypes/cast.py:1990: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  result[:] = values
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output directory :  ACM_HIV_PCP
+To see your visualization, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis/ACM_HIV_PCP/index.html
+To access all visualizations that you have created, click the URL below (or locate the files):
+https://cybergisx.cigi.illinois.edu/user/suhan2/view/CyberGIS-Vis/Quantitative_Data_Vis//ACM_log.html
+Advanced options are available in 
+https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_Data_Vis/ACM_HIV_PCP/data/CONFIG_HIV_PCP.js
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="CatDataVis.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Categorical Data visualization</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Chaeyeon Han<br/>
+  
+      &copy; Copyright 2022, CyberGIS Center for Advanced Digital and Spatial Studies.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+    <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
+
+  </body>
+</html>

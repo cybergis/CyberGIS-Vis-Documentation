@@ -31,10 +31,11 @@ author = 'Chaeyeon Han'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 #extensions = ['myst_parser']
-extensions = [#'nbsphinx', # for embedding jupyter Notebook
+#'nbsphinx', # for embedding jupyter Notebook
     #'sphinx_copybutton', # adding copy button in jupyter notebook cells
     #'sphinx_gallery.load_style', # for thumbnail gallery of jupyter notebook
     #'myst_parser',
+extensions = [
     'myst_nb',
     'sphinxcontrib.fulltoc',
     ]

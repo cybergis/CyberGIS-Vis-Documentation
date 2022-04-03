@@ -10,10 +10,10 @@ Adaptive Choropleth Mapper with Stacked Chart
 The Stacked Chart visualizes the temporal change.
 Click to see `Demo. <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Stacked_Chart.mp4>`_
 
-.. image:: _static/example_images/ACM.PNG
+.. image:: example_images/ACM.png
   :width: 400
   :alt: ACM
-  :target: ../QuantDataVis.html
+  :target: QuantDataVis.html
 
 Adaptive Choropelth Mapper with Correlogram
 ---------------------------------------------------

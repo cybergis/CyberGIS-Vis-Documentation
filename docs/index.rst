@@ -117,6 +117,7 @@ Table of Contents
   :maxdepth: 2
   :caption: Quick Start
 
+  self
   CyberGISX
 
 .. toctree::

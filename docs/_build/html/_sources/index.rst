@@ -125,7 +125,7 @@ Table of Contents
 
   QuantDataVis
   CatDataVis
-  Adaptive_Chropleth_Mapper
+  Adaptive_Chropleth_Mapper <Adaptive Choropleth Mapper>
 ..  basic
 
 .. toctree::

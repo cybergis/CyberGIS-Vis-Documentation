@@ -34,11 +34,11 @@ author = 'Chaeyeon Han'
 #'nbsphinx', # for embedding jupyter Notebook
     #'sphinx_copybutton', # adding copy button in jupyter notebook cells
     #'sphinx_gallery.load_style', # for thumbnail gallery of jupyter notebook
-    
+
 # always add to requirements.txt before building
 extensions = [
     'myst_nb',
-    'sphinxcontrib.fulltoc',
+    #'sphinxcontrib.fulltoc',
     ]
 source_suffix = {
     '.rst': 'restructuredtext',

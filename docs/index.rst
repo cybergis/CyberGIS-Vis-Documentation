@@ -109,7 +109,6 @@ iframe test
 .. raw:: html
 
   <iframe src="http://su-gis.iptime.org/VNE/Chicago/index.html" width=100% height="402">iframe show up?</iframe>
-  <iframe src="https://www.w3schools.com" width=100% height="402">iframe show up?</iframe>
 
 .. table of contents
 .. --------------------------------------------

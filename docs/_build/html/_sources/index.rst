@@ -111,17 +111,18 @@ iframe test
   <iframe src="http://su-gis.iptime.org/VNE/Chicago/index.html" width=100% height="402">iframe show up?</iframe>
 
 
-Table of Contents
-------------------
+.. table of contents
+.. --------------------------------------------
 .. toctree::
   :maxdepth: 2
+  :hidden:
   :caption: Quick Start
 
-  self
   CyberGISX
 
 .. toctree::
   :maxdepth: 3
+  :hidden:
   :caption: Visualization Modules
 
   QuantDataVis
@@ -129,6 +130,7 @@ Table of Contents
   Adaptive_Chropleth_Mapper
 
 .. toctree::
+  :hidden:
   :maxdepth: 1
   :caption: Additional Resources
 

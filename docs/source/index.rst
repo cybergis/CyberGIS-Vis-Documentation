@@ -15,7 +15,7 @@ Key features of the current CyberGIS-Vis implementation include:
 * reproducible visual analytics through integration with CyberGIS-Jupyter
 * multi-language support including both Python and Javascript
 
-`Firefox <https://www.mozilla.org/en-US/firefox/new/>`_ is the recommended web browser for reaping the best performance of CyberGIS-Vis.
+'Firefox <https://www.mozilla.org/en-US/firefox/new/>'_ is the recommended web browser for reaping the best performance of CyberGIS-Vis.
 
 Getting Started
 ------------------------------------------------------
@@ -76,29 +76,29 @@ Open Jupyter notebook below and run.::
 Data
 -------
 
-Visualizations created by CyberGIS-Vis are using a small subset of `LTDB <https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm>`_.
-`LTDB <https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm>`_ provides socioeconomic and demographic data with harmonized boundaries from 1970 to 2010 decennially.
-If you need the entire dataset, visit `this website <https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm>`_ to download.
+Visualizations created by CyberGIS-Vis are using a small subset of 'LTDB <https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm>'_.
+'LTDB <https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm>'_ provides socioeconomic and demographic data with harmonized boundaries from 1970 to 2010 decennially.
+If you need the entire dataset, visit 'this website <https://s4.ad.brown.edu/projects/diversity/researcher/LTDB.htm>'_ to download.
 
 
 Related Resources
 ------------------
 
-* `CyberGISX <https://cybergisxhub.cigi.illinois.edu/>`_
-* `Leaflet <https://leafletjs.com/>`_
-* `PlotlyJS <https://plot.ly/javascript/>`_
-* `D3 <https://d3js.org/>`_
-* `GEOSNAP VIZ <https://github.com/spatialucr/geosnap-viz>`_
+* 'CyberGISX <https://cybergisxhub.cigi.illinois.edu/>'_
+* 'Leaflet <https://leafletjs.com/>'_
+* 'PlotlyJS <https://plot.ly/javascript/>'_
+* 'D3 <https://d3js.org/>'_
+* 'GEOSNAP VIZ <https://github.com/spatialucr/geosnap-viz>'_
 
 Contributors
 -----------------
-The lead developer of CyberGIS-Vis is Dr. Su Yeon Han at the `CyberGIS Center for Advanced Digital and Spatial Studies (CyberGIS Center) <https://cybergis.illinois.edu/>`_
+The lead developer of CyberGIS-Vis is Dr. Su Yeon Han at the 'CyberGIS Center for Advanced Digital and Spatial Studies (CyberGIS Center) <https://cybergis.illinois.edu/>'_
 and the Principal Investigator of CyberGIS-Vis is Dr. Shaowen Wang at CyberGIS Center.
 This software repository is primarily maintained by CyberGIS Center. Please email any questions to help@cybergis.org.
 
 License
 ---------------
-This project is licensed under the Apache License 2.0 - see the `LICENSE <https://github.com/cybergis/CyberGIS-Vis/blob/master/LICENSE>`_ file for details.
+This project is licensed under the Apache License 2.0 - see the 'LICENSE <https://github.com/cybergis/CyberGIS-Vis/blob/master/LICENSE>'_ file for details.
 
 Funding
 ---------------

@@ -10,12 +10,12 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
-import sphinx_rtd_theme
-import sphinx_book_theme
+# import os
+# import sys
+# import sphinx_rtd_theme
+# import sphinx_book_theme
 
-sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
@@ -62,10 +62,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 html_theme = "sphinx_book_theme"
-html_theme_path = [sphinx_book_theme.get_html_theme_path()]
+# html_theme_path = [sphinx_book_theme.get_html_theme_path()]
 html_theme_options = {
     "logo_only": True,
-    "repository_url": "https://github.com/bravoyourlif/CyberGIS-Vis-Documentation", # git repository url
+    "repository_url": "https://github.com/cybergis/CyberGIS-Vis-Documentation", # git repository url
     "use_repository_button": True, #show git repository
     "toc_title": "Contents", #title of right side bar
     "show_toc_level": 3,  # level of right side bar
@@ -83,8 +83,8 @@ html_sidebars = { # side bar configuration
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_css_files = ["custom.css"]
-html_sourcelink_suffix = ''
+# html_css_files = ["custom.css"]
+# html_sourcelink_suffix = ''
 # -- Options for PDF output -------------------------------------------------
 latex_elements = {
     # The paper size (’letterpaper’ or ’a4paper’).

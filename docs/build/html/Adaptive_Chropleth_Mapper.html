@@ -8,30 +8,26 @@
 
     <title>Example Visualizations using CyberGIS-Vis &#8212; CyberGIS-Vis-Documentation  documentation</title>
     
-    <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=6363cedec9f48b0e5c888349adb3b134b60ae2e1" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     
-    <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
-    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -40,7 +36,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -52,7 +48,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -93,24 +89,19 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Quick Start
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="index.html">
-   CyberGIS-Vis-Documentation
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="CyberGISX.html">
    Getting Started with CyberGISX
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Visualization Modules
  </span>
@@ -132,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Additional Resources
  </span>
@@ -206,7 +197,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2"
+        <a href="https://github.com/cybergis/CyberGIS-Vis-Documentation"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -223,7 +214,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2/issues/new?title=Issue%20on%20page%20%2FAdaptive_Chropleth_Mapper.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/cybergis/CyberGIS-Vis-Documentation/issues/new?title=Issue%20on%20page%20%2FAdaptive_Chropleth_Mapper.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -240,7 +231,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2/edit/master/Adaptive_Chropleth_Mapper.ipynb"
+        <a href="https://github.com/cybergis/CyberGIS-Vis-Documentation/edit/master/Adaptive_Chropleth_Mapper.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -268,7 +259,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/Adaptive_Chropleth_Mapper.ipynb"
+        <a href="_sources/Adaptive_Chropleth_Mapper.ipynb.txt"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -528,13 +519,13 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="example-visualizations-using-cybergis-vis">
-<h1>Example Visualizations using CyberGIS-Vis<a class="headerlink" href="#example-visualizations-using-cybergis-vis" title="Permalink to this headline">¶</a></h1>
+  <section id="example-visualizations-using-cybergis-vis">
+<h1>Example Visualizations using CyberGIS-Vis<a class="headerlink" href="#example-visualizations-using-cybergis-vis" title="Permalink to this headline">#</a></h1>
 <section id="documentations-and-demos-about-cybergis-vis-are-available-at-https-github-com-cybergis-cybergis-vis">
-<h2>Documentations and Demos about CyberGIS-Vis are available at: https://github.com/cybergis/CyberGIS-Vis<a class="headerlink" href="#documentations-and-demos-about-cybergis-vis-are-available-at-https-github-com-cybergis-cybergis-vis" title="Permalink to this headline">¶</a></h2>
+<h2>Documentations and Demos about CyberGIS-Vis are available at: https://github.com/cybergis/CyberGIS-Vis<a class="headerlink" href="#documentations-and-demos-about-cybergis-vis-are-available-at-https-github-com-cybergis-cybergis-vis" title="Permalink to this headline">#</a></h2>
 </section>
 <section id="setup-environment">
-<h2>Setup environment<a class="headerlink" href="#setup-environment" title="Permalink to this headline">¶</a></h2>
+<h2>Setup environment<a class="headerlink" href="#setup-environment" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -546,21 +537,21 @@ title="Print to PDF"
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span><span class="o">/</span><span class="n">ipykernel_12156</span><span class="o">/</span><span class="mf">1378334812.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="nn">Input In [1],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">Adaptive_Choropleth_Mapper</span> <span class="kn">import</span> <span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">,</span> <span class="n">Adaptive_Choropleth_Mapper_log</span>
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;geopandas&#39;
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="visualizations-for-exploring-relationship-between-data">
-<h2>Visualizations for Exploring Relationship between data<a class="headerlink" href="#visualizations-for-exploring-relationship-between-data" title="Permalink to this headline">¶</a></h2>
+<h2>Visualizations for Exploring Relationship between data<a class="headerlink" href="#visualizations-for-exploring-relationship-between-data" title="Permalink to this headline">#</a></h2>
 <section id="set-input-data-socioeconomic-and-demographic-data-from-ltdb">
-<h3>Set input data: Socioeconomic and Demographic Data from LTDB<a class="headerlink" href="#set-input-data-socioeconomic-and-demographic-data-from-ltdb" title="Permalink to this headline">¶</a></h3>
+<h3>Set input data: Socioeconomic and Demographic Data from LTDB<a class="headerlink" href="#set-input-data-socioeconomic-and-demographic-data-from-ltdb" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">input_attributes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;attributes/Los_Angeles_1980_1990_2000_2010.csv&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;geoid&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">})</span>
@@ -987,7 +978,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="adaptive-choropleth-mapper-with-scatter-plot">
-<h3>Adaptive Choropleth Mapper with Scatter Plot<a class="headerlink" href="#adaptive-choropleth-mapper-with-scatter-plot" title="Permalink to this headline">¶</a></h3>
+<h3>Adaptive Choropleth Mapper with Scatter Plot<a class="headerlink" href="#adaptive-choropleth-mapper-with-scatter-plot" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_Scatter</span> <span class="o">=</span> <span class="p">{</span>
@@ -1040,7 +1031,7 @@ C:\Users\bravo\myworks\CyberGIS-Vis-master\CyberGIS-Vis-master\Quantitative_Data
 </div>
 </section>
 <section id="adaptive-choropleth-mapper-with-correlogram">
-<h3>Adaptive Choropleth Mapper with Correlogram<a class="headerlink" href="#adaptive-choropleth-mapper-with-correlogram" title="Permalink to this headline">¶</a></h3>
+<h3>Adaptive Choropleth Mapper with Correlogram<a class="headerlink" href="#adaptive-choropleth-mapper-with-correlogram" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_Correlogram</span> <span class="o">=</span> <span class="p">{</span>
@@ -1093,7 +1084,7 @@ https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_D
 </div>
 </section>
 <section id="adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-to-visulize-relationship-between-variables">
-<h3>Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) to visulize relationship between variables.<a class="headerlink" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-to-visulize-relationship-between-variables" title="Permalink to this headline">¶</a></h3>
+<h3>Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) to visulize relationship between variables.<a class="headerlink" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-to-visulize-relationship-between-variables" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_PCP</span> <span class="o">=</span> <span class="p">{</span>
@@ -1151,7 +1142,7 @@ https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_D
 </div>
 </section>
 <section id="adaptive-choropleth-mapper-with-stacked-chart">
-<h3>Adaptive Choropleth Mapper with Stacked Chart<a class="headerlink" href="#adaptive-choropleth-mapper-with-stacked-chart" title="Permalink to this headline">¶</a></h3>
+<h3>Adaptive Choropleth Mapper with Stacked Chart<a class="headerlink" href="#adaptive-choropleth-mapper-with-stacked-chart" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_Stacked</span> <span class="o">=</span> <span class="p">{</span>
@@ -1188,7 +1179,7 @@ https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_D
 </div>
 </section>
 <section id="adaptive-choropleth-mapper-with-top-10-bar-chart">
-<h3>Adaptive Choropleth Mapper with Top 10 Bar Chart<a class="headerlink" href="#adaptive-choropleth-mapper-with-top-10-bar-chart" title="Permalink to this headline">¶</a></h3>
+<h3>Adaptive Choropleth Mapper with Top 10 Bar Chart<a class="headerlink" href="#adaptive-choropleth-mapper-with-top-10-bar-chart" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_bar</span> <span class="o">=</span> <span class="p">{</span>
@@ -1226,9 +1217,9 @@ https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_D
 </section>
 </section>
 <section id="visualizations-for-spatiotemporal-data">
-<h2>Visualizations for Spatiotemporal Data<a class="headerlink" href="#visualizations-for-spatiotemporal-data" title="Permalink to this headline">¶</a></h2>
+<h2>Visualizations for Spatiotemporal Data<a class="headerlink" href="#visualizations-for-spatiotemporal-data" title="Permalink to this headline">#</a></h2>
 <section id="set-input-data-covid-19-data-and-the-number-of-visits-estimated-based-on-twitter-data">
-<h3>Set input data: COVID-19 data and the number of visits estimated based on Twitter data<a class="headerlink" href="#set-input-data-covid-19-data-and-the-number-of-visits-estimated-based-on-twitter-data" title="Permalink to this headline">¶</a></h3>
+<h3>Set input data: COVID-19 data and the number of visits estimated based on Twitter data<a class="headerlink" href="#set-input-data-covid-19-data-and-the-number-of-visits-estimated-based-on-twitter-data" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Covid_Visits</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;attributes/Covid_Visits.csv&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;geoid&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">})</span>
@@ -1547,7 +1538,7 @@ https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_D
 </div>
 </section>
 <section id="adaptive-choropleth-mapper-with-multiple-line-chart-mlc">
-<h3>Adaptive Choropleth Mapper with Multiple Line Chart (MLC)<a class="headerlink" href="#adaptive-choropleth-mapper-with-multiple-line-chart-mlc" title="Permalink to this headline">¶</a></h3>
+<h3>Adaptive Choropleth Mapper with Multiple Line Chart (MLC)<a class="headerlink" href="#adaptive-choropleth-mapper-with-multiple-line-chart-mlc" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_MLC_COVID</span> <span class="o">=</span> <span class="p">{</span>
@@ -1597,7 +1588,7 @@ https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_D
 </div>
 </section>
 <section id="adaptive-choropleth-mapper-with-comparison-line-chart-clc">
-<h3>Adaptive Choropleth Mapper with Comparison Line Chart (CLC)<a class="headerlink" href="#adaptive-choropleth-mapper-with-comparison-line-chart-clc" title="Permalink to this headline">¶</a></h3>
+<h3>Adaptive Choropleth Mapper with Comparison Line Chart (CLC)<a class="headerlink" href="#adaptive-choropleth-mapper-with-comparison-line-chart-clc" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_CLC_COVID</span> <span class="o">=</span> <span class="p">{</span>
@@ -1641,9 +1632,9 @@ https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_D
 </section>
 </section>
 <section id="more-examples">
-<h2>More Examples<a class="headerlink" href="#more-examples" title="Permalink to this headline">¶</a></h2>
+<h2>More Examples<a class="headerlink" href="#more-examples" title="Permalink to this headline">#</a></h2>
 <section id="set-input-data-hiv-data">
-<h3>Set input data: HIV data<a class="headerlink" href="#set-input-data-hiv-data" title="Permalink to this headline">¶</a></h3>
+<h3>Set input data: HIV data<a class="headerlink" href="#set-input-data-hiv-data" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">input_attributes_hiv</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;attributes/HIV_US_multiple_long.csv&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;geoid&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">})</span>
@@ -1865,7 +1856,7 @@ https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_D
 </div>
 </section>
 <section id="adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-for-time-series-visualization">
-<h3>Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) for Time Series Visualization<a class="headerlink" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-for-time-series-visualization" title="Permalink to this headline">¶</a></h3>
+<h3>Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP) for Time Series Visualization<a class="headerlink" href="#adaptive-choropleth-mapper-with-parallel-coordinate-plot-pcp-for-time-series-visualization" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_PCP_hiv</span> <span class="o">=</span> <span class="p">{</span>
@@ -1947,8 +1938,9 @@ https://cybergisx.cigi.illinois.edu/user/suhan2/edit/CyberGIS-Vis/Quantitative_D
       </div>
     </div>
   
-    <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

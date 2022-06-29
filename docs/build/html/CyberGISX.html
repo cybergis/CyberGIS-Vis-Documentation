@@ -8,30 +8,26 @@
 
     <title>Getting Started with CyberGISX &#8212; CyberGIS-Vis-Documentation  documentation</title>
     
-    <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=6363cedec9f48b0e5c888349adb3b134b60ae2e1" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     
-    <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
-    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -40,7 +36,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -53,7 +49,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -94,24 +90,19 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Quick Start
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="index.html">
-   CyberGIS-Vis-Documentation
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Getting Started with CyberGISX
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Visualization Modules
  </span>
@@ -133,7 +124,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Additional Resources
  </span>
@@ -207,7 +198,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2"
+        <a href="https://github.com/cybergis/CyberGIS-Vis-Documentation"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -224,7 +215,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2/issues/new?title=Issue%20on%20page%20%2FCyberGISX.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/cybergis/CyberGIS-Vis-Documentation/issues/new?title=Issue%20on%20page%20%2FCyberGISX.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -241,7 +232,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2/edit/master/CyberGISX.rst"
+        <a href="https://github.com/cybergis/CyberGIS-Vis-Documentation/edit/master/CyberGISX.rst"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -269,7 +260,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/CyberGISX.rst"
+        <a href="_sources/CyberGISX.rst.txt"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -378,10 +369,10 @@ title="Print to PDF"
               <div>
                 
   <section id="getting-started-with-cybergisx">
-<h1>Getting Started with CyberGISX<a class="headerlink" href="#getting-started-with-cybergisx" title="Permalink to this headline">¶</a></h1>
+<h1>Getting Started with CyberGISX<a class="headerlink" href="#getting-started-with-cybergisx" title="Permalink to this headline">#</a></h1>
 <p>You can run CyberGIS-Vis in your Jupyter Notebook installed on your PC as well as in CybearGISX. We recommend that you use CyberGISX because all the required packages have been integrated in CyberGISX.</p>
 <section id="running-in-cybergisx-temporarily-unavailable">
-<h2>Running in CyberGISX (Temporarily Unavailable)<a class="headerlink" href="#running-in-cybergisx-temporarily-unavailable" title="Permalink to this headline">¶</a></h2>
+<h2>Running in CyberGISX (Temporarily Unavailable)<a class="headerlink" href="#running-in-cybergisx-temporarily-unavailable" title="Permalink to this headline">#</a></h2>
 <p>To use it in CyberGISX, follow steps below:</p>
 <p>If you do not have a CyerGISX account, create a CyberGISX account with your GitHub id at <a class="reference external" href="https://cybergisxhub.cigi.illinois.edu">https://cybergisxhub.cigi.illinois.edu</a></p>
 <p>Open up the CyberGIX, click the “new” button on the top right corner, and select python3 and enter the command line below to download CyberGIS-Vis.:</p>
@@ -395,7 +386,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="running-in-local-environment">
-<h2>Running in Local Environment<a class="headerlink" href="#running-in-local-environment" title="Permalink to this headline">¶</a></h2>
+<h2>Running in Local Environment<a class="headerlink" href="#running-in-local-environment" title="Permalink to this headline">#</a></h2>
 <p>To run in a local environment, follow steps below.</p>
 <p>Download and install Anaconda at <a class="reference external" href="https://www.anaconda.com/">https://www.anaconda.com/</a>.</p>
 <p>After installation is done, open “Anaconda Prompt” and enter command lines below to create an environment.:</p>
@@ -471,8 +462,9 @@ title="Print to PDF"
       </div>
     </div>
   
-    <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

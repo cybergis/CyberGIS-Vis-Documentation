@@ -40,6 +40,7 @@ extensions = [
     'myst_nb',
     #'sphinxcontrib.fulltoc',
     ]
+
 source_suffix = {
     '.rst': 'restructuredtext',
     '.ipynb': 'myst-nb',
@@ -64,7 +65,7 @@ html_theme = "sphinx_book_theme"
 html_theme_path = [sphinx_book_theme.get_html_theme_path()]
 html_theme_options = {
     "logo_only": True,
-    "repository_url": "https://github.com/bravoyourlif/CyberGIS-Vis-Documentation2", # git repository url
+    "repository_url": "https://github.com/bravoyourlif/CyberGIS-Vis-Documentation", # git repository url
     "use_repository_button": True, #show git repository
     "toc_title": "Contents", #title of right side bar
     "show_toc_level": 3,  # level of right side bar

@@ -1,4 +1,4 @@
-# CyberGIS-Vis-Documentation2
+# CyberGIS-Vis-Documentation
 
 This repository holds all Read the Docs & Sphinx codes and images for the CyberGIS-Vis technical documentation.
 - [CyberGIS-Vis GitHub Repository](https://github.com/cybergis/CyberGIS-Vis)

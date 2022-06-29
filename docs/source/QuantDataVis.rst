@@ -2,7 +2,7 @@ Quantitative Data visualization
 =======================================
 
 
-'Documentation for Adaptive Choropleth Mapper (ACM) <http://su-gis.iptime.org/ACM/>'_
+`Documentation for Adaptive Choropleth Mapper (ACM) <http://su-gis.iptime.org/ACM/>`_
 
 
 Adaptive Choropleth Mapper with Stacked Chart
@@ -17,8 +17,8 @@ Click to see 'Demo. <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Stacked_Ch
 
 Adaptive Choropelth Mapper with Correlogram
 ---------------------------------------------------
-Click to see 'Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Correlogram_Tutorial.mp4>'_ and
-'Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Correlogram_demo.mp4>'_ .
+Click to see `Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Correlogram_Tutorial.mp4>`_ and
+`Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Correlogram_demo.mp4>`_ .
 
 .. image:: _static/ACM_Correlogram.PNG
   :width: 400
@@ -27,8 +27,8 @@ Click to see 'Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Correlo
 
 Adaptive Choropleth Mapper with Scatter Plot
 ---------------------------------------------------
-Click to see 'Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Scatter_Tutorial.mp4>'_ and
-'Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Scatter_Demo.mp4>'_ .
+Click to see `Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Scatter_Tutorial.mp4>`_ and
+`Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Scatter_Demo.mp4>`_ .
 
 .. image:: _static/ACM_Scatter.png
   :width: 400
@@ -37,8 +37,8 @@ Click to see 'Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Scatter
 
 Adaptive Choropleth Mapper with Parallel Coordinate Plot (PCP)
 ---------------------------------------------------------------
-Click to see 'Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_PCP_Tutorial.mp4>'_ and
-'Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_PCP_demo.mp4>'_ .
+Click to see `Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_PCP_Tutorial.mp4>`_ and
+`Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_PCP_demo.mp4>`_ .
 
 .. image:: _static/ACM_PCP.png
   :width: 400
@@ -47,7 +47,7 @@ Click to see 'Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_PCP_Tut
 Adaptive Choropleth Mapper with Multiple Linked Chart (MLC)
 ---------------------------------------------------------------
 Click to see
-'Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/ACM_MLC.mp4>'_ .
+`Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/ACM_MLC.mp4>`_ .
 
 .. image:: _static/ACM_MLC.png
   :width: 400
@@ -57,7 +57,7 @@ Click to see
 Adaptive Choropleth Mapper with Comparison Linked Chart (CLC)
 ---------------------------------------------------------------
 Click to see
-'Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/ACM_CLC.mp4>'_ .
+`Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/ACM_CLC.mp4>`_ .
 
 .. image:: _static/ACM_CLC.png
   :width: 400

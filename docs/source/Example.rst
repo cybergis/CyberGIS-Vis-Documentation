@@ -204,3 +204,35 @@ The chloropleth maps visualize the data of each variable. The correlogram visual
     :width: 100%
     :alt: four chloroplath maps with correlogram
     :align: center
+
+4. Adaptive Choropleth Mapper with Stacked Chart
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The chloropleth maps visualize the data of each variable. The correlogram visualizes the scatter plot of all pairs of the selected attributes and the distribution of each selected attributes. To show the scatter plot, add the :python:`'Stacked_Chart': True` in the parameter of the :python:`Adaptive_Choropleth_Mapper_viz()`.
+
+.. code-block:: python
+
+        param_Stacked = {
+            'title': "Adaptive Choropleth Mapper with Stacked Chart",
+            'filename_suffix': "LA_Stacked",
+            'inputCSV': input_attributes,   
+            'shapefile': shapefile,
+            'periods': [1980, 1990, 2000, 2010],
+            'NumOfMaps': 4,
+            'shortLabelCSV': "attributes/LTDB_ShortLabel.csv",       
+            'variables': [         #enter variable names of the column you entered above.
+                    "p_nonhisp_white_persons",
+            ],
+            'Map_width':"350px",
+            'Map_height':"350px",    
+            'Stacked_Chart': True,  #Comment out if you do not want to visualize this chart       
+        }  
+        Adaptive_Choropleth_Mapper_viz(param_Stacked)
+        Adaptive_Choropleth_Mapper_log(param_Stacked)
+
+**Example result**
+
+.. image:: _static/Qual_Stacked.png
+    :width: 100%
+    :alt: four chloroplath maps with correlogram
+    :align: center

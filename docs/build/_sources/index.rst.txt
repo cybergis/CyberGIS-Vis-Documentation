@@ -127,6 +127,7 @@ iframe test
   QuantDataVis
   CatDataVis
   Adaptive_Chropleth_Mapper
+  Example
 
 .. toctree::
   :hidden:

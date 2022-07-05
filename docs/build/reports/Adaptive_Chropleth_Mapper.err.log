@@ -24,11 +24,11 @@ from Adaptive_Choropleth_Mapper import Adaptive_Choropleth_Mapper_viz, Adaptive_
 
 [1;31m---------------------------------------------------------------------------[0m
 [1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Input [1;32mIn [1][0m, in [0;36m<cell line: 2>[1;34m()[0m
+Input [1;32mIn [1][0m, in [0;36m<cell line: 3>[1;34m()[0m
 [0;32m      1[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
-[1;32m----> 2[0m [38;5;28;01mimport[39;00m [38;5;21;01mgeopandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mgpd[39;00m
-[0;32m      3[0m [38;5;28;01mfrom[39;00m [38;5;21;01mAdaptive_Choropleth_Mapper[39;00m [38;5;28;01mimport[39;00m Adaptive_Choropleth_Mapper_viz, Adaptive_Choropleth_Mapper_log
+[0;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mgeopandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mgpd[39;00m
+[1;32m----> 3[0m [38;5;28;01mfrom[39;00m [38;5;21;01mAdaptive_Choropleth_Mapper[39;00m [38;5;28;01mimport[39;00m Adaptive_Choropleth_Mapper_viz, Adaptive_Choropleth_Mapper_log
 
-[1;31mModuleNotFoundError[0m: No module named 'geopandas'
-ModuleNotFoundError: No module named 'geopandas'
+[1;31mModuleNotFoundError[0m: No module named 'Adaptive_Choropleth_Mapper'
+ModuleNotFoundError: No module named 'Adaptive_Choropleth_Mapper'
 

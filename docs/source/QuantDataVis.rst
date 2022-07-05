@@ -17,7 +17,7 @@ Click to see `Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Stacked_Cha
 
 Adaptive Choropelth Mapper with Correlogram
 ---------------------------------------------------
-Click to see 'Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Correlogram_Tutorial.mp4>'_ and
+Click to see `Tutorial <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Correlogram_Tutorial.mp4>`_ and
 `Demo <http://su-gis.iptime.org/CyberGIS-Vis/videos/VIZ_Correlogram_demo.mp4>`_ .
 
 .. image:: _static/ACM_Correlogram.PNG

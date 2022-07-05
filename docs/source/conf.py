@@ -22,7 +22,7 @@
 
 project = 'CyberGIS-Vis-Documentation'
 copyright = '2022, CyberGIS Center for Advanced Digital and Spatial Studies'
-author = 'Chaeyeon Han'
+author = 'CyberGIS Center'
 
 
 # -- General configuration ---------------------------------------------------

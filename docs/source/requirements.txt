@@ -4,3 +4,6 @@ sphinx_book_theme==0.3.0.rc1
 readthedocs-sphinx-search==0.1.1
 myst-nb==0.13.2
 sphinxcontrib-fulltoc==1.2.0
+sphinx-panels
+sphinx-toolbox
+

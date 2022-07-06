@@ -21,9 +21,12 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=6363cedec9f48b0e5c888349adb3b134b60ae2e1" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
@@ -36,7 +39,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -72,8 +75,9 @@
       <div class="row">
           
 <!-- Sidebar -->
-<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
-    <div class="navbar-brand-box">
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -142,7 +146,17 @@
 </ul>
 
     </div>
-</nav>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -351,14 +365,53 @@ title="Print to PDF"
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-scatter-plot">
-     1. Adaptive Choropleth Mapper with Scatter Plot
+    <a class="reference internal nav-link" href="#exploring-relationship-between-data">
+     Exploring Relationship between data
     </a>
+    <ul class="visible nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scatter-plot">
+       1. Scatter Plot
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#correlogram">
+       2. Correlogram
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parallel-coordinate-plot">
+       3. Parallel Coordinate Plot
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stacked-chart">
+       4. Stacked Chart
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#top-10-bar-chart">
+       5. Top 10 Bar Chart
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-correlogram">
-     2. Adaptive Choropleth Mapper with Correlogram
+    <a class="reference internal nav-link" href="#visualizations-for-spatiotemporal-data">
+     Visualizations for Spatiotemporal Data
     </a>
+    <ul class="visible nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#multiple-line-chart-mlc">
+       1. Multiple Line Chart (MLC)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#comparison-line-chart-clc">
+       2. Comparison Line Chart (CLC)
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -409,14 +462,53 @@ title="Print to PDF"
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-scatter-plot">
-     1. Adaptive Choropleth Mapper with Scatter Plot
+    <a class="reference internal nav-link" href="#exploring-relationship-between-data">
+     Exploring Relationship between data
     </a>
+    <ul class="visible nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scatter-plot">
+       1. Scatter Plot
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#correlogram">
+       2. Correlogram
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parallel-coordinate-plot">
+       3. Parallel Coordinate Plot
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stacked-chart">
+       4. Stacked Chart
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#top-10-bar-chart">
+       5. Top 10 Bar Chart
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adaptive-choropleth-mapper-with-correlogram">
-     2. Adaptive Choropleth Mapper with Correlogram
+    <a class="reference internal nav-link" href="#visualizations-for-spatiotemporal-data">
+     Visualizations for Spatiotemporal Data
     </a>
+    <ul class="visible nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#multiple-line-chart-mlc">
+       1. Multiple Line Chart (MLC)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#comparison-line-chart-clc">
+       2. Comparison Line Chart (CLC)
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -432,7 +524,8 @@ title="Print to PDF"
                 
   <section id="example-code">
 <h1>Example Code<a class="headerlink" href="#example-code" title="Permalink to this headline">#</a></h1>
-<p>To try our interactive juoyter notebook, please check out our <a class="reference external" href="https://cybergisxhub.cigi.illinois.edu/notebook/recent-advances-in-cybergis-viz-for-democratizing-access-to-scalable-geovisualization/">CyberGIS-Vis notebook</a> on CyberGISX platform.</p>
+<p>To try our interactive juoyter notebook, please check out our CyberGIS-Vis notebook on CyberGISX platform.</p>
+<p><a class="sphinx-bs btn text-wrap btn-warning text-white font-weight-bold reference external" href="https://cybergisxhub.cigi.illinois.edu/notebook/recent-advances-in-cybergis-viz-for-democratizing-access-to-scalable-geovisualization/" title="Open Jupyter notebook on CyberGISX"><span>Open interactive Notebook on CyberGISX</span></a></p>
 <section id="setup-environment">
 <h2>Setup Environment<a class="headerlink" href="#setup-environment" title="Permalink to this headline">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -473,9 +566,16 @@ title="Print to PDF"
 </section>
 <section id="code-samples-for-the-visualization">
 <h2>Code Samples for the visualization<a class="headerlink" href="#code-samples-for-the-visualization" title="Permalink to this headline">#</a></h2>
-<section id="adaptive-choropleth-mapper-with-scatter-plot">
-<h3>1. Adaptive Choropleth Mapper with Scatter Plot<a class="headerlink" href="#adaptive-choropleth-mapper-with-scatter-plot" title="Permalink to this headline">#</a></h3>
-<p>The chloropleth maps visualize the data of each variable. The data of 2 selected attributes on x-axis and y-axis are visualized in the scatter plot. To show the scatter plot, add the <code class="code python docutils literal notranslate"><span class="literal string single"><span class="pre">'Scatter_Plot'</span></span><span class="punctuation"><span class="pre">:</span></span> <span class="keyword constant"><span class="pre">True</span></span></code> in the parameter of the <code class="code python docutils literal notranslate"><span class="name"><span class="pre">Adaptive_Choropleth_Mapper_viz</span></span><span class="punctuation"><span class="pre">()</span></span></code>.</p>
+<section id="exploring-relationship-between-data">
+<h3>Exploring Relationship between data<a class="headerlink" href="#exploring-relationship-between-data" title="Permalink to this headline">#</a></h3>
+<section id="scatter-plot">
+<h4>1. Scatter Plot<a class="headerlink" href="#scatter-plot" title="Permalink to this headline">#</a></h4>
+<div class="line-block">
+<div class="line">The chloropleth maps visualize the data of each variable. The data of 2 selected attributes on x-axis and y-axis are visualized in the scatter plot.</div>
+</div>
+<div class="line-block">
+<div class="line">To show the scatter plot, add the <code class="code python docutils literal notranslate"><span class="literal string single"><span class="pre">'Scatter_Plot'</span></span><span class="punctuation"><span class="pre">:</span></span> <span class="keyword constant"><span class="pre">True</span></span></code> in the parameter of the <code class="code python docutils literal notranslate"><span class="name"><span class="pre">Adaptive_Choropleth_Mapper_viz</span></span><span class="punctuation"><span class="pre">()</span></span></code>.</div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">param_Scatter</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Scatter Plot&quot;</span><span class="p">,</span>
     <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;LA_Scatter&quot;</span><span class="p">,</span>
@@ -514,9 +614,14 @@ title="Print to PDF"
 <p><strong>Example result</strong></p>
 <a class="reference internal image-reference" href="_images/ACM_Scatter.png"><img alt="Two chloroplath maps with scatter plot" class="align-center" src="_images/ACM_Scatter.png" style="width: 100%;" /></a>
 </section>
-<section id="adaptive-choropleth-mapper-with-correlogram">
-<h3>2. Adaptive Choropleth Mapper with Correlogram<a class="headerlink" href="#adaptive-choropleth-mapper-with-correlogram" title="Permalink to this headline">#</a></h3>
-<p>The chloropleth maps visualize the data of each variable. The correlogram visualizes the scatter plot of all pairs of the selected attributes and the distribution of each selected attributes. To show the scatter plot, add the <code class="code python docutils literal notranslate"><span class="literal string single"><span class="pre">'Correlogram'</span></span><span class="punctuation"><span class="pre">:</span></span> <span class="keyword constant"><span class="pre">True</span></span></code> in the parameter of the <code class="code python docutils literal notranslate"><span class="name"><span class="pre">Adaptive_Choropleth_Mapper_viz</span></span><span class="punctuation"><span class="pre">()</span></span></code>.</p>
+<section id="correlogram">
+<h4>2. Correlogram<a class="headerlink" href="#correlogram" title="Permalink to this headline">#</a></h4>
+<div class="line-block">
+<div class="line">The chloropleth maps visualize the data of each variable. The correlogram visualizes the scatter plot of all pairs of the selected attributes and the distribution of each selected attributes.</div>
+</div>
+<div class="line-block">
+<div class="line">To show the scatter plot, add the <code class="code python docutils literal notranslate"><span class="literal string single"><span class="pre">'Correlogram'</span></span><span class="punctuation"><span class="pre">:</span></span> <span class="keyword constant"><span class="pre">True</span></span></code> in the parameter of the <code class="code python docutils literal notranslate"><span class="name"><span class="pre">Adaptive_Choropleth_Mapper_viz</span></span><span class="punctuation"><span class="pre">()</span></span></code>.</div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">param_Correlogram</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Correlogram&quot;</span><span class="p">,</span>
     <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;LA_Correlogram&quot;</span><span class="p">,</span>
@@ -554,6 +659,215 @@ title="Print to PDF"
 </div>
 <p><strong>Example result</strong></p>
 <a class="reference internal image-reference" href="_images/ACM_Correlogram.png"><img alt="four chloroplath maps with correlogram" class="align-center" src="_images/ACM_Correlogram.png" style="width: 100%;" /></a>
+</section>
+<section id="parallel-coordinate-plot">
+<h4>3. Parallel Coordinate Plot<a class="headerlink" href="#parallel-coordinate-plot" title="Permalink to this headline">#</a></h4>
+<div class="line-block">
+<div class="line">The chloropleth maps visualize the data of each variable. The Parallel Coordinate Plot is ideal for comparing many variables together. This type of visualization is used for plotting multivariate, numerical data. The downside is that they can become over-cluttered and therefore illegible when they’re very data-dense.</div>
+</div>
+<div class="line-block">
+<div class="line">To show the Parallel Coordinate Plot, add the <code class="code python docutils literal notranslate"><span class="literal string single"><span class="pre">'Correlogram'</span></span><span class="punctuation"><span class="pre">:</span></span> <span class="keyword constant"><span class="pre">True</span></span></code> in the parameter of the <code class="code python docutils literal notranslate"><span class="name"><span class="pre">Adaptive_Choropleth_Mapper_viz</span></span><span class="punctuation"><span class="pre">()</span></span></code>.</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">param_PCP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Paralle Coordinate Plot&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;Census_PCP&quot;</span><span class="p">,</span>                                      <span class="c1"># max 30 character</span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">input_attributes</span><span class="p">,</span>
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile</span><span class="p">,</span>
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2010</span><span class="p">],</span>
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+            <span class="s2">&quot;p_nonhisp_white_persons&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_nonhisp_black_persons&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_hispanic_persons&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_asian_persons&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_employed_manufacturing&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_poverty_rate&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_foreign_born_pop&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_persons_under_18&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_persons_over_60&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_edu_college_greater&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_unemployment_rate&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_employed_professional&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_vacant_housing_units&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_owner_occupied_units&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_housing_units_multiunit_structures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;median_home_value&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_structures_30_old&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;p_household_recent_move&quot;</span><span class="p">,</span>
+
+        <span class="p">],</span>
+    <span class="s1">&#39;shortLabelCSV&#39;</span><span class="p">:</span> <span class="s2">&quot;attributes/LTDB_ShortLabel.csv&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="c1"># Number of chloropleth maps to be displayed.</span>
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Parallel_Coordinates_Plot&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfPCP&#39;</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="c1"># number of the attributes to be displayed in the parallel coordinates plot.</span>
+    <span class="s1">&#39;InitialVariablePCP&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2010_% white (non-Hispanic)&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% black (non-Hispanic)&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% Hispanic&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% Asian &amp; PI race&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% professional employees&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% manufacturing employees&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_</span><span class="si">% i</span><span class="s2">n poverty&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_</span><span class="si">% f</span><span class="s2">oreign born&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% 17 and under (total)&quot;</span><span class="p">,</span> <span class="s2">&quot;2010_% 60 and older&quot;</span><span class="p">]</span> <span class="c1"># The list of attributes displayed in the parallel coordinates plot.</span>
+<span class="p">}</span>
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_PCP</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_PCP</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Example result</strong></p>
+<a class="reference internal image-reference" href="_images/ACM_Correlogram.png"><img alt="four chloroplath maps with correlogram" class="align-center" src="_images/ACM_Correlogram.png" style="width: 100%;" /></a>
+</section>
+<section id="stacked-chart">
+<h4>4. Stacked Chart<a class="headerlink" href="#stacked-chart" title="Permalink to this headline">#</a></h4>
+<div class="line-block">
+<div class="line">The chloropleth maps visualize the data of each period. The stacked chart allows part-to-whole comparisons over time. Data series are stacked one on top of the other in vertical columns. Stacked charts can show change over time because it’s easy to compare total column lengths. We reccomend using the stacked chart with only one variable.</div>
+</div>
+<div class="line-block">
+<div class="line">To show the stacked chart, add the <code class="code python docutils literal notranslate"><span class="literal string single"><span class="pre">'Stacked_Chart'</span></span><span class="punctuation"><span class="pre">:</span></span> <span class="keyword constant"><span class="pre">True</span></span></code> in the parameter of the <code class="code python docutils literal notranslate"><span class="name"><span class="pre">Adaptive_Choropleth_Mapper_viz</span></span><span class="punctuation"><span class="pre">()</span></span></code>. Then, you need to check “Link All” and click “Set Global” to set all maps to the same extent. The stacked chart shows the sum of each class of the selected variable in each period.</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">param_Stacked</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Stacked Chart&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;LA_Stacked&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">input_attributes</span><span class="p">,</span>
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile</span><span class="p">,</span>
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1980</span><span class="p">,</span> <span class="mi">1990</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2010</span><span class="p">],</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s1">&#39;shortLabelCSV&#39;</span><span class="p">:</span> <span class="s2">&quot;attributes/LTDB_ShortLabel.csv&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter one variable name of the column you want to display in stacked chart.</span>
+            <span class="s2">&quot;p_nonhisp_white_persons&quot;</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;350px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Stacked_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>  <span class="c1">#Add this to display stacked chart in the visualization.</span>
+<span class="p">}</span>
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_Stacked</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_Stacked</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Example result</strong></p>
+<p>The stacked chart is shown the number of unit in each class (8 classes) in each period (1980-2010) of % of non-white population.</p>
+<a class="reference internal image-reference" href="_images/Qual_Stacked.png"><img alt="four chloroplath maps with a stacked chart" class="align-center" src="_images/Qual_Stacked.png" style="width: 100%;" /></a>
+</section>
+<section id="top-10-bar-chart">
+<h4>5. Top 10 Bar Chart<a class="headerlink" href="#top-10-bar-chart" title="Permalink to this headline">#</a></h4>
+<div class="line-block">
+<div class="line">The chloropleth maps visualize the data of each attribute. The top 10 bar chart shows the 10 highest values of the selected variable.</div>
+</div>
+<div class="line-block">
+<div class="line">To show the stacked chart, add the <code class="code python docutils literal notranslate"><span class="literal string single"><span class="pre">'Top10_Chart'</span></span><span class="punctuation"><span class="pre">:</span></span> <span class="keyword constant"><span class="pre">True</span></span></code> in the parameter of the <code class="code python docutils literal notranslate"><span class="name"><span class="pre">Adaptive_Choropleth_Mapper_viz</span></span><span class="punctuation"><span class="pre">()</span></span></code>.</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">param_bar</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Adaptive Choropleth Mapper with Stacked Chart&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;LA_bar&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">input_attributes</span><span class="p">,</span>
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile</span><span class="p">,</span>
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1980</span><span class="p">,</span> <span class="mi">1990</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2010</span><span class="p">],</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s1">&#39;shortLabelCSV&#39;</span><span class="p">:</span> <span class="s2">&quot;attributes/LTDB_ShortLabel.csv&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;p_other_language&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;p_female_headed_families&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;per_capita_income&quot;</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;Top10_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>  <span class="c1">#Add this to display tyop 10 bar chart in the visualization.</span>
+<span class="p">}</span>
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_bar</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_bar</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Example result</strong></p>
+<a class="reference internal image-reference" href="_images/Qual_top10.png"><img alt="three chloroplath maps with a top 10 bar chart" class="align-center" src="_images/Qual_top10.png" style="width: 100%;" /></a>
+</section>
+</section>
+<section id="visualizations-for-spatiotemporal-data">
+<h3>Visualizations for Spatiotemporal Data<a class="headerlink" href="#visualizations-for-spatiotemporal-data" title="Permalink to this headline">#</a></h3>
+<section id="multiple-line-chart-mlc">
+<h4>1. Multiple Line Chart (MLC)<a class="headerlink" href="#multiple-line-chart-mlc" title="Permalink to this headline">#</a></h4>
+<div class="line-block">
+<div class="line">The chloropleth maps visualize the data of each attribute. The multiple line chart shows the line charts of the selected attributes.</div>
+</div>
+<div class="line-block">
+<div class="line">To show the stacked chart, add the <code class="code python docutils literal notranslate"><span class="literal string single"><span class="pre">'Multiple_Line_Chart'</span></span><span class="punctuation"><span class="pre">:</span></span> <span class="keyword constant"><span class="pre">True</span></span></code> in the parameter of the <code class="code python docutils literal notranslate"><span class="name"><span class="pre">Adaptive_Choropleth_Mapper_viz</span></span><span class="punctuation"><span class="pre">()</span></span></code>.</div>
+</div>
+<div class="line-block">
+<div class="line">You can customize the line chart by adding the following arguments:</div>
+</div>
+<ul class="simple">
+<li><p><code class="code python docutils literal notranslate"><span class="name"><span class="pre">NumOfMLC</span></span></code> to specify number of line chart to be shown</p></li>
+<li><p><code class="code python docutils literal notranslate"><span class="name"><span class="pre">titlesOfMLC</span></span></code> to specify the title of each line chart</p></li>
+<li><p><code class="code python docutils literal notranslate"><span class="name"><span class="pre">DefaultRegion_MLC</span></span></code> to specify the default region for each line chart</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">param_MLC_COVID</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Covid-19 Risk Assessment using Twitter, Metropolitan Statistical Areas, USA&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Subject&#39;</span><span class="p">:</span> <span class="s2">&quot;Temporal Patterns&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;COVID_MLC&quot;</span><span class="p">,</span>  <span class="c1"># max 30 character</span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">Covid_Visits</span><span class="p">,</span>
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile_MSA</span><span class="p">,</span>
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="s2">&quot;All&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+            <span class="s2">&quot;Confirmed Rate&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Death Rate&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;The Number of Visits from Outside to Inside of the selected MSA&quot;</span>
+        <span class="p">],</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="s1">&#39;InitialLayers&#39;</span><span class="p">:[</span><span class="s2">&quot;2020-03-15_Confirmed Rate&quot;</span> <span class="p">,</span> <span class="s2">&quot;2020-12-27_Confirmed Rate&quot;</span><span class="p">],</span>
+    <span class="s1">&#39;Initial_map_center&#39;</span><span class="p">:[</span><span class="mi">37</span><span class="p">,</span> <span class="o">-</span><span class="mi">97</span><span class="p">],</span>
+    <span class="s1">&#39;Initial_map_zoom_level&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;650px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;400px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Top10_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;Multiple_Line_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfMLC&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+    <span class="s1">&#39;titlesOfMLC&#39;</span><span class="p">:[</span><span class="s2">&quot;1. COVID-19 Confirmed Cases (/100k pop)&quot;</span><span class="p">,</span> <span class="s2">&quot;2. COVID-19 Death Cases (/100k pop)&quot;</span><span class="p">,</span> <span class="s2">&quot;3. The Number of Visits from Outside to Inside of the selected MSA&quot;</span><span class="p">],</span>
+    <span class="s1">&#39;DefaultRegion_MLC&#39;</span><span class="p">:</span><span class="s2">&quot;35620&quot;</span>
+<span class="p">}</span>
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_MLC_COVID</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_MLC_COVID</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Example result</strong></p>
+<a class="reference internal image-reference" href="_images/ACM_MLC.PNG"><img alt="three chloroplath maps with Multiple Line Chart" class="align-center" src="_images/ACM_MLC.PNG" style="width: 100%;" /></a>
+</section>
+<section id="comparison-line-chart-clc">
+<h4>2. Comparison Line Chart (CLC)<a class="headerlink" href="#comparison-line-chart-clc" title="Permalink to this headline">#</a></h4>
+<div class="line-block">
+<div class="line">The chloropleth maps visualize the data of each attribute. The top 10 bar chart shows the 10 highest values of the selected variable.</div>
+</div>
+<div class="line-block">
+<div class="line">To show the stacked chart, add the <code class="code python docutils literal notranslate"><span class="literal string single"><span class="pre">'Comparision_Chart'</span></span><span class="punctuation"><span class="pre">:</span></span> <span class="keyword constant"><span class="pre">True</span></span></code> in the parameter of the <code class="code python docutils literal notranslate"><span class="name"><span class="pre">Adaptive_Choropleth_Mapper_viz</span></span><span class="punctuation"><span class="pre">()</span></span></code>.</div>
+</div>
+<div class="line-block">
+<div class="line">You can customize the line chart by adding the following arguments:</div>
+</div>
+<ul class="simple">
+<li><p><code class="code python docutils literal notranslate"><span class="name"><span class="pre">NumOfCLC</span></span></code> is the number of values on the X-axis of CLC</p></li>
+<li><p><code class="code python docutils literal notranslate"><span class="name"><span class="pre">DefaultRegion_CLC</span></span></code> to specify 2 default regions for the visualization</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">param_CLC_COVID</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s2">&quot;Comparison of COVID-19 Confirmed Rate between Metropolitan Statistical Areas, USA&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Subject&#39;</span><span class="p">:</span> <span class="s2">&quot;Temporal Patterns&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;filename_suffix&#39;</span><span class="p">:</span> <span class="s2">&quot;COVID_CLC&quot;</span><span class="p">,</span>                                      <span class="c1"># max 30 character</span>
+    <span class="s1">&#39;inputCSV&#39;</span><span class="p">:</span> <span class="n">Covid_Visits</span><span class="p">,</span>
+    <span class="s1">&#39;shapefile&#39;</span><span class="p">:</span> <span class="n">shapefile_MSA</span><span class="p">,</span>
+    <span class="s1">&#39;periods&#39;</span><span class="p">:</span> <span class="s2">&quot;All&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;variables&#39;</span><span class="p">:</span> <span class="p">[</span>         <span class="c1">#enter variable names of the column you entered above.</span>
+            <span class="s2">&quot;Confirmed Rate&quot;</span>
+        <span class="p">],</span>
+    <span class="s1">&#39;NumOfMaps&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="s1">&#39;InitialLayers&#39;</span><span class="p">:[</span><span class="s2">&quot;2020-04-19_Confirmed Rate&quot;</span> <span class="p">,</span> <span class="s2">&quot;2020-11-01_Confirmed Rate&quot;</span><span class="p">],</span>
+    <span class="s1">&#39;Initial_map_center&#39;</span><span class="p">:[</span><span class="mi">37</span><span class="p">,</span> <span class="o">-</span><span class="mi">97</span><span class="p">],</span>
+    <span class="s1">&#39;Initial_map_zoom_level&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+    <span class="s1">&#39;Map_width&#39;</span><span class="p">:</span><span class="s2">&quot;650px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Map_height&#39;</span><span class="p">:</span><span class="s2">&quot;400px&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;Top10_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;Comparision_Chart&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;NumOfCLC&#39;</span><span class="p">:</span> <span class="mi">46</span><span class="p">,</span>
+    <span class="s1">&#39;DefaultRegion_CLC&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;35620&quot;</span><span class="p">,</span> <span class="s2">&quot;16980&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="n">Adaptive_Choropleth_Mapper_viz</span><span class="p">(</span><span class="n">param_CLC_COVID</span><span class="p">)</span>
+<span class="n">Adaptive_Choropleth_Mapper_log</span><span class="p">(</span><span class="n">param_CLC_COVID</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Example result</strong></p>
+<a class="reference internal image-reference" href="_images/ACM_CLC.PNG"><img alt="three chloroplath maps with  Comparison Line Chart" class="align-center" src="_images/ACM_CLC.PNG" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><a class="sphinx-bs btn text-wrap btn-warning text-white font-weight-bold reference external" href="https://cybergisxhub.cigi.illinois.edu/notebook/recent-advances-in-cybergis-viz-for-democratizing-access-to-scalable-geovisualization/" title="Open Jupyter notebook on CyberGISX"><span>Open interactive Notebook on CyberGISX</span></a></p>
+</section>
 </section>
 </section>
 </section>

@@ -51,7 +51,7 @@ You should see the results like:
 3. Edit the content as you want, then, save the file. 
 4. You can see the changes by building the documentation locally with the command below:
 
-    `cd ./docs/` 
+    `cd ./docs/`   
     `sphinx-build -ab html ./source ./build`
 
 

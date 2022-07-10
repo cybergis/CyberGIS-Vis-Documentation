@@ -33,12 +33,12 @@ The source code for this documentation are in [docs/source/](https://github.com/
 2. With command line, go to "./docs/source/"
 3. run the command below 
 
-    pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
 4. Go back to "./docs/" folder
 5. test your sphinx with the command below. 
 
-    sphinx-build -ab html ./source ./build
+    `sphinx-build -ab html ./source ./build`
 
 You should see the results like: 
 
@@ -51,7 +51,7 @@ You should see the results like:
 3. Edit the content as you want, then, save the file. 
 4. You can see the changes by building the documentation locally with the command below:
 
-    cd ./docs/ 
-    sphinx-build -ab html ./source ./build
+    `cd ./docs/` 
+    `sphinx-build -ab html ./source ./build`
 
 

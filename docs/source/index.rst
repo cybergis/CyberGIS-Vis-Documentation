@@ -104,11 +104,7 @@ Funding
 ---------------
 The CyberGIS-Vis project is supported by the CyberGIS Center for Advanced Digital and Spatial Studies at the University of Illinois at Urbana-Champaign.
 
-iframe test
---------------------
-.. raw:: html
 
-  <iframe src="http://su-gis.iptime.org/VNE/Chicago/index.html" width=100% height="402">iframe show up?</iframe>
 
 .. table of contents
 .. --------------------------------------------

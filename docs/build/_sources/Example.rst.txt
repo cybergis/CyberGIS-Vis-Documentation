@@ -160,7 +160,7 @@ Exploring Relationship between data
 
 **Example result**
 
-.. image:: _static/ACM_Correlogram.png
+.. image:: _static/ACM_Correlogram.PNG
     :width: 100%
     :alt: four chloroplath maps with correlogram
     :align: center

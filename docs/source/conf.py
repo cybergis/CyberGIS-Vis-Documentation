@@ -39,7 +39,6 @@ author = 'CyberGIS Center'
 extensions = [
     'myst_nb',
     #'sphinxcontrib.fulltoc',
-    'sphinx_toolbox.collapse',
     'sphinx_panels',
     ]
 

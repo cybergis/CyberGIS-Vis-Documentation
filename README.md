@@ -30,12 +30,12 @@ The source code for this documentation are in [docs/source/](https://github.com/
 
 ## Preapre the enviroenment
 1. Clone the repo. 
-2. With command line, go to "./docs/source/"
+2. With command line, go to "docs/source/"
 3. run the command below 
 
     `pip install -r requirements.txt`
 
-4. Go back to "./docs/" folder
+4. Go back to "docs/" folder
 5. test your sphinx with the command below. 
 
     `sphinx-build -ab html ./source ./build`
@@ -51,7 +51,12 @@ You should see the results like:
 3. Edit the content as you want, then, save the file. 
 4. You can see the changes by building the documentation locally with the command below:
 
-    `cd ./docs/`   
+    `cd docs/`   
     `sphinx-build -ab html ./source ./build`
 
+5. The built HTML files will be located at "docs/build/". You can open the HTML file directly to see the changes. 
+
+## To update the GITHUB page 
+
+You just have to push the new code to gh-pages branch. There is a github workflow that will automantically build the new HTML from your updated files. 
 

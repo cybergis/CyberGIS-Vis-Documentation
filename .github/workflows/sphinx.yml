@@ -10,7 +10,7 @@ jobs:
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
-        pre-build-command: "python -m pip install sphinx==5.0.2 sphinx-gallery myst-nb sphinx_book_theme  sphinxcontrib-fulltoc myst-parser sphinxcontrib.video sphinx-book-theme matplotlib readthedocs-sphinx-search geopandas"
+        pre-build-command: "python -m pip install sphinx==5.0.2 sphinx-gallery myst-nb sphinx_book_theme  sphinxcontrib-fulltoc myst-parser sphinxcontrib.video sphinx-book-theme matplotlib readthedocs-sphinx-search geopandas sphinx-toolbox sphinx-panels"
         docs-folder: "docs/"
         build-command: "sphinx-build -ab html ./source ./build"
     - name: Upload artifacts

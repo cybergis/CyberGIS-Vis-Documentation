@@ -8,10 +8,10 @@ This repository holds all Read the Docs & Sphinx codes and images for the CyberG
 The documentation in this repo is created using [sphinx-doc](https://www.sphinx-doc.org/en/master/). The information below are the guide to edit the content of the documentation. 
 
 
-The source code for this documentation are in docs/source/ folder. The folder content are as follows:
+The source code for this documentation are in [docs/source/](https://github.com/cybergis/CyberGIS-Vis-Documentation/tree/gh-pages/docs/source) folder. The folder content are as follows:
 
 ### Folders:
-**_static**: contains all statics resources such as the images, video, etc. To reference to the resources in the template just put the resource in this folder and use the path "_static/<resource file name>"
+**_static**: contains all statics resources such as the images, video, etc. To reference to the resources in the template just put the resource in this folder and use the path "_static/\<resource file name\>"
 
 ### Page templates 
 

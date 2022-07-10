@@ -215,7 +215,7 @@ Exploring Relationship between data
 
 **Example result**
 
-.. image:: _static/ACM_Correlogram.png
+.. image:: _static/ACM_PCP.png
     :width: 100%
     :alt: four chloroplath maps with correlogram
     :align: center
@@ -338,7 +338,7 @@ Visualizations for Spatiotemporal Data
 
 **Example result**
 
-.. image:: _static/ACM_MLC.PNG
+.. image:: _static/ACM_MLC.png
     :width: 100%
     :alt: three chloroplath maps with Multiple Line Chart
     :align: center
@@ -383,7 +383,7 @@ Visualizations for Spatiotemporal Data
 
 **Example result**
 
-.. image:: _static/ACM_CLC.PNG
+.. image:: _static/ACM_CLC.png
     :width: 100%
     :alt: three chloroplath maps with  Comparison Line Chart
     :align: center

@@ -19,7 +19,10 @@ Setup Environment
 
         import pandas as pd
         import geopandas as gpd
-        from Adaptive_Choropleth_Mapper import Adaptive_Choropleth_Mapper_viz, Adaptive_Choropleth_Mapper_log
+        # For Quantitative Data Visualization
+        from Adaptive_Choropleth_Mapper import * 
+        # For Qualitative Data Visualization
+        from Qualitative_Analysis_Mapper import *
 
 Load Data
 ---------
